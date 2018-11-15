@@ -3,12 +3,14 @@ import Particles from 'react-particles-js';
 import styled from 'styled-components';
 
 const Background = styled.div`
-background-color: #4285f4;
+    background-color: #4285f4;
+    display: inline-block;
 `;
 
 export default class PageTutorial extends Component {
     render() {
         return (
+            <div>
             <Background>
                 <Particles
                     params={{
@@ -17,11 +19,11 @@ export default class PageTutorial extends Component {
                                 "value": 80,
                                 "density": {
                                     "enable": true,
-                                    "value_area": 800
+                                    "value_area": 1000
                                 }
                             },
                             "color": {
-                                "value": "#ffffff"
+                                "value": "#123456"
                             },
                             "shape": {
                                 "type": "circle",
@@ -83,6 +85,11 @@ export default class PageTutorial extends Component {
                         "interactivity": {
                             "detect_on": "canvas",
                             "events": {
+                                "onresize": {
+                                    "enable": true,
+                                    "density_auto": true,
+                                    "density_area": 400 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+                                },
                                 "onhover": {
                                     "enable": false,
                                     "mode": "grab"
@@ -121,8 +128,13 @@ export default class PageTutorial extends Component {
                         },
                         "retina_detect": true
                     }}
+                    height= "200px"
+                    width= "200px"
                 />
             </Background>
+                <h1> this is the Tutorial on how to make a page with react and React JS</h1>
+            </div>
+
         )
     }
 
