@@ -8,11 +8,18 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
