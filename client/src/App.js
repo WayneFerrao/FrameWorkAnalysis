@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import './App.css';
 import FWInstallation from "./FWInstallation";
 import Demo from "./Demo";
 import PageTutorial from "./PageTutorial";
