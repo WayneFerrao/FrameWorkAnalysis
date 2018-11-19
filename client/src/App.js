@@ -17,8 +17,6 @@ export default class App extends Component {
     render() {
         const Summary = () => (
             <Main>
-
-
                     <Link to="/Installation">
                         <h1> Installation</h1>
                     </Link>
