@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import styled from 'styled-components';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './App.css';
@@ -12,27 +11,14 @@ import Credits from "./Credits";
 const Main = styled.div`
   text-align: center;
 `;
-const ReactLink = styled.a`
-  color:#34a853;
-`;
+
 
 export default class App extends Component {
     render() {
         const Summary = () => (
             <Main>
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <p>
-                        Tensa Zangetsu
-                    </p>
-                    <ReactLink
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </ReactLink>
+
+
                     <Link to="/Installation">
                         <h1> Installation</h1>
                     </Link>
@@ -48,7 +34,6 @@ export default class App extends Component {
                     <Link to="/Credits">
                         <h1> Credits</h1>
                     </Link>
-                </header>
             </Main>
         );
         return (
