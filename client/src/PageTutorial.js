@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Particles from 'react-particles-js';
+import NavBar from "./NavBar";
+
 import styled from 'styled-components';
 
 const Background = styled.div`
@@ -11,6 +13,7 @@ export default class PageTutorial extends Component {
     render() {
         return (
             <div>
+                <NavBar/>
             <Background>
                 <Particles
                     params={{
