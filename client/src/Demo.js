@@ -10,55 +10,32 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import NavBar from "./NavBar";
+import Card1 from './Card1';
+import Card2 from './Card2';
+import {CardData} from './CardData';
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 
-const styles = {
-  card: {
-    maxWidth: 310
-  },
-  media: {
-    objectFit: "cover"
-  }
-};
 
 export default class Demo extends Component {
     render(){
         return(
-            <div>
+          <div>
             <NavBar/>
-            <Card >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Boku no Hero Academia"
+            <Grid container spacing={10}   style={{ minHeight: '100vh' }}   justify="center"   alignItems="center"
+>
+            <Grid item md={3}>
+            <Card1 CardData={CardData[0]}/>
+            </Grid>
+            <Grid item md={3}>
+            <Card1 CardData={CardData[2]}/>
 
-                  height="180"
-                  image="https://images-na.ssl-images-amazon.com/images/I/91kjVOEopVL._SY606_.jpg"
-                  title="Boku no Hero Academia"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Boku no Hero Academia
-                  </Typography>
-                  <Typography component="p">
-                    A superhero-loving boy without any powers is determined to enroll in
-                    a prestigious hero academy and learn what it really means to be a
-                    hero.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <a href="https://www.crunchyroll.com/my-hero-academia">
-                  <Button variant="contained" color="primary" size="large">
-                    Watch Now
-                  </Button>
-                </a>
-                <a href="https://myanimelist.net/anime/31964/Boku_no_Hero_Academia?q=boku%20no%20hero">
-                  <Button variant="contained" color="primary" size="large">
-                    Learn More
-                  </Button>
-                </a>
-              </CardActions>
-            </Card>
+            </Grid>
+            <Grid item md={3}>
+            <Card1 CardData={CardData[1]}/>
+
+</Grid>
+</Grid>
             </div>
         )
     }
