@@ -84,8 +84,8 @@ export default class App extends Component {
                         </ImgContainer>
                     </Container>
                     <FWContentContainer>
-                        <h1>NodeJS: Pros and Cons</h1>
-                        <h1>React: Pros and Cons</h1>
+                        <h1>Pros</h1>
+                        <h1>Pros</h1>
                     </FWContentContainer>
                     <Footer/>
                 </div>
