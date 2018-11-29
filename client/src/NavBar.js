@@ -4,7 +4,6 @@ import {Routes} from "./routes";
 import {Link} from "react-router-dom";
 import InboxIcon from "@material-ui/core/SvgIcon/SvgIcon";
 
-
 export default class NavBar extends Component {
     constructor(props) {
         super(props);
@@ -19,7 +18,7 @@ export default class NavBar extends Component {
     };
     render() {
         const sideList = (
-            <div>
+            <NavBarDiv>
                 <MenuList>
                     <ListItem button key="Home">
                         <ListItemIcon><InboxIcon/></ListItemIcon>
@@ -46,7 +45,7 @@ export default class NavBar extends Component {
                         <ListItemText>Credits</ListItemText>
                     </ListItem>
                 </MenuList>
-            </div>
+            </NavBarDiv>
         );
         return (
             <AppBar style={{background: '#003d6b'}} position="static">
