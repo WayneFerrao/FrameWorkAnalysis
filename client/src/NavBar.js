@@ -20,36 +20,6 @@ export default class NavBar extends Component {
         });
     };
     render() {
-        const sideList = (
-            <NavBarDiv>
-                <MenuList>
-                    <ListItem button key="Home">
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText> Home</ListItemText>
-                    </ListItem>
-                    <ListItem button key="Tut">
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText> Tutorial</ListItemText>
-                    </ListItem>
-                    <ListItem button key="Installation">
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText>Installation</ListItemText>
-                    </ListItem>
-                    <ListItem button key="Demo Page">
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText>Demo Page</ListItemText>
-                    </ListItem>
-                    <ListItem button key="Conclusion">
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText>Conclusion</ListItemText>
-                    </ListItem>
-                    <ListItem button key="Credits">
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText>Credits</ListItemText>
-                    </ListItem>
-                </MenuList>
-            </NavBarDiv>
-        );
         return (
             <AppBar style={{background: '#003d6b', zIndex: 1}} position="fixed">
                 <Toolbar>
