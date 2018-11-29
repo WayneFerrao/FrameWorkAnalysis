@@ -2,29 +2,39 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import NavBar from "./NavBar";
 import TableContents from "./TableContents";
+const Wrapper = styled.section`
+  padding: 2em;
+  background: #d5d8f0;
+  color:#003d6b	;
+  border-radius: 7px;
+`;
 export default class FWInstallation extends Component {
-    
     render(){
-        
         return(
             <div>
                 <NavBar/>
-                <div style={{padding: '2% 18% 2%',}} >
-                    <br></br>
-                    <br></br>
+                <div style={{padding: '4% 18% 2%'}}>
                     <h1 id = "react">
                         React Installation
                     </h1>
                     <h2 id = "requirements">
                         Requirements
                     </h2> 
-                    <h4>
+                    <p>
                         Before installing ReactJS you must first ensure that you have both
-                        Node.js and NPM installed on your device. You can check this by using the
-                        node -v and npm -v commands in your command prompt or terminal. If it is properly
-                        installed it should output something similar to this: <br></br>
-                        <img alt = "insert image here"src ="https://res.cloudinary.com/teepublic/image/private/s--KvRn7ey3--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1512231713/production/designs/39441_1.jpg"></img>
-                    </h4>  
+                        Node.js and NPM properly installed on your device. You can check this
+                        by using the commands below into command prompt or terminal: <br></br>
+                        <Wrapper>
+                            node -v
+                        </Wrapper>
+                        <br></br>
+                        <Wrapper>
+                            npm -v
+                        </Wrapper>
+                        <br></br>
+                        If it is properly
+                        installed it should output the version number <br></br>
+                    </p>  
                     <h2 id = "stuff">
                         Stuff
                     </h2>
@@ -36,24 +46,44 @@ export default class FWInstallation extends Component {
                         Installing React 
                     </h2>
                     <p>
-                        do npm -g create-react-app or something
+                        Once you have ensured that you have NodeJs and NPM you will next install using:
+                        <br></br>
+                        <Wrapper>
+                            npm install -g create-react-app
+                        </Wrapper>
+                        <br></br>
                     </p>  
                     <h2 id = "check">
-                        Checking React Installation
+                        Creating your First React application
                     </h2>
                     <p>
-                        npm start in thing
+                        If you have correctly installed the React you will now be able to create your first
+                        application. In your command prompt or terminal navigate to the file that you want your
+                        application to be held in and enter:
+                        <br></br>
+                        <Wrapper>
+                            npm create-react-app
+                        </Wrapper>
+                        <br></br>
+                        You will then have to wait possibly a couple minutes before it finishes loading
+                        enter:
+                        <br></br>
+                        <Wrapper>
+                            npm start
+                        </Wrapper>
+                        <br></br>
+                        it should show open the default react application in your browser.
                     </p>  
                     <h1 id ="backend" >
                         Backend Installation
-                    </h1>
+                    </h1>*
                 </div>
                 <div>
                 <TableContents>
-                    <a href = "#react">React Installation</a>
-                    <a href = "#requirements">Requirements</a>
-                    <a href = "#install">Installing React</a>
-                    <a href = "#check">Checking React Installation</a>
+                    <a href = "#react">React Installation</a> <br></br>
+                    <a href = "#requirements">Requirements</a> <br></br>
+                    <a href = "#install">Installing React</a> <br></br>
+                    <a href = "#check">Creating your First React application</a> <br></br>
                     <a href = "#backend">Backend Installation</a>
                 </TableContents>
                 </div>

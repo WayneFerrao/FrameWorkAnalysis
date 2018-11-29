@@ -5,16 +5,22 @@ idk what somethings do
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
-const drawerWidth = 240;
-
+const drawerWidth=240;
+const Wrapper = styled.section`
+  padding: 10% 20% 10%;
+  background: #d5d8f0;
+  height: 100%;
+  
+`;
 const styles = theme => ({
   root: {
     display: 'flex',
   },
   drawer: {
-    width: drawerWidth,
+    width: "10%",
     flexShrink: 0,
     zIndex: 0,
 
@@ -31,7 +37,9 @@ function TableContents(props) {
       <CssBaseline />
       <Drawer anchor = "right" className={classes.drawer} variant="permanent" classes={{ paper: classes.drawerPaper,}}>
         <div className={classes.toolbar} />
-            {props.children}
+            <Wrapper>
+              {props.children}
+            </Wrapper>
       </Drawer>
     </div>
   );
