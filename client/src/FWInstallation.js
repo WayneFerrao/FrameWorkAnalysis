@@ -9,7 +9,7 @@ export default class FWInstallation extends Component {
         return(
             <div>
                 <NavBar/>
-                <div style={{width: '80%'}}>
+                <div style={{padding: '2% 18% 2%',}} >
                     <br></br>
                     <br></br>
                     <h1 id = "react">
