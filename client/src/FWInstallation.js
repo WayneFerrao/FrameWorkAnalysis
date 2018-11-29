@@ -2,63 +2,118 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import NavBar from "./NavBar";
 import TableContents from "./TableContents";
+import Footer from "./Footer";
+const CodeBlock = styled.section`
+  padding: 2em;
+  background: #C0C0C0;
+  border-radius: 7px;
+`;
+//anchors werent working properly cause of appbar and im too low iq to think of a good solution
+const StyledH2 = styled.h2`
+    padding-top: 10%;
+    margin-top: -10%;
+    color: #7997d6;
+    font-family: Roboto;
+`
+const StyledH1 = styled.h1`
+    padding-top: 10%;
+    margin-top: -10%;
+    color: #5b73b4;
+    font-size: 40px;
+    font-family: Roboto;
+`
+const StyledP = styled.p`
+    font-family: Roboto;
+`
 export default class FWInstallation extends Component {
-    
     render(){
-        
         return(
             <div>
                 <NavBar/>
-                <div style={{padding: '2% 18% 2%'}}>
-                    <br></br>
-                    <br></br>
-                    <h1 id = "react">
+                <div style={{padding: '6% 19% 2%'}}>
+                    <StyledH1 id = "react">
                         React Installation
-                    </h1>
-                    <h2 id = "requirements">
+                    </StyledH1>
+                    <StyledH2 id = "requirements">
                         Requirements
-                    </h2> 
-                    <h4>
-                        Before installing ReactJS you must first ensure that you have both
-                        Node.js and NPM installed on your device. You can check this by using the
-                        node -v and npm -v commands in your command prompt or terminal. If it is properly
-                        installed it should output something similar to this: <br></br>
-                        <img alt = "insert image here"src ="https://res.cloudinary.com/teepublic/image/private/s--KvRn7ey3--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1512231713/production/designs/39441_1.jpg"></img>
-                    </h4>  
-                    <h2 id = "stuff">
-                        Stuff
-                    </h2>
-                    <p>
+                    </StyledH2> 
+                    <StyledP>
+                        Before installing ReactJS you must ensure that both
+                        Node.js and NPM have been properly installed on your device. You can check this
+                        by using the commands below i command prompt or terminal: 
+                        <br></br>
+                        <br></br>
+                        <CodeBlock>
+                            node -v
+                        </CodeBlock>
+                        <br></br>
+                        <CodeBlock>
+                            npm -v
+                        </CodeBlock>
+                        <br></br>
+                        If it is properly
+                        installed it should output the version number 
+                        <br></br>
+                    </StyledP>  
+                    <StyledH2 id = "node">
+                        Install Node.js and NPM
+                    </StyledH2>
+                    <StyledP>
                         If you do not have these programs on your device here are the links to the downloads for
-                        <a href ="https://nodejs.org/en/download/"> stuff</a>
-                    </p>  
-                    <h2 id = "install">
+                        <a href ="https://nodejs.org/en/download/"> Node.js</a> and <a href = "https://www.npmjs.com/get-npm">NPM </a>
+                    </StyledP>  
+                    <StyledH2 id = "install">
                         Installing React 
-                    </h2>
+                    </StyledH2>
                     <p>
-                        do npm -g create-react-app or something
+                        Once you have ensured that you have NodeJs and NPM you will next install using:
+                        <br></br>
+                        <br></br>
+                        <CodeBlock>
+                            npm install -g create-react-app
+                        </CodeBlock>
+                        <br></br>
                     </p>  
-                    <h2 id = "check">
-                        Checking React Installation
-                    </h2>
-                    <p>
-                        npm start in thing
-                    </p>  
-                    <h1 id ="backend" >
+                    <StyledH2 id = "check">
+                        Creating your First React application
+                    </StyledH2>
+                    <StyledP>
+                        If you have correctly installed the React you will now be able to create your first
+                        application. In your command prompt or terminal navigate to the file that you want your
+                        application to be held in and enter:
+                        <br></br>
+                        <br></br>
+                        <CodeBlock>
+                            npm create-react-app
+                        </CodeBlock>
+                        <br></br>
+                        You will then have to wait possibly a couple minutes before it finishes loading
+                        enter:
+                        <br></br>
+                        <br></br>
+                        <CodeBlock>
+                            npm start
+                        </CodeBlock>
+                        <br></br>
+                        it should show open the default react application in your browser.
+                    </StyledP>  
+                    <StyledH1 id ="backend" >
                         Backend Installation
-                    </h1>
+                    </StyledH1>
                 </div>
                 <div>
                 <TableContents>
-                    <a href = "#react">React Installation</a>
-                    <a href = "#requirements">Requirements</a>
-                    <a href = "#install">Installing React</a>
-                    <a href = "#check">Checking React Installation</a>
-                    <a href = "#backend">Backend Installation</a>
+                <br></br><a href = "#react" style = {{textDecoration: "none",color: "#003d6b" }}>React Installation</a> <br></br>
+                <br></br><a href = "#requirements" style = {{textDecoration: "none",color: "#003d6b" }}>Requirements</a> <br></br>
+                <br></br><a href = "#node" style = {{textDecoration: "none",color: "#003d6b" }}>Install Node.js and NPM</a> <br></br>
+                <br></br><a href = "#install" style = {{textDecoration: "none",color: "#003d6b" }}>Installing React</a> <br></br>
+                <br></br><a href = "#check" style = {{textDecoration: "none",color: "#003d6b" }}>Creating your First React application</a> <br></br>
+                <br></br><a href = "#backend" style = {{textDecoration: "none",color: "#003d6b" }}>Backend Installation</a>
                 </TableContents>
                 </div>
+                <Footer/>
             </div>
-            
+       
         )
     }
     
