@@ -1,3 +1,6 @@
+/*
+Changes made: I changed position of appbar to relative and changed the zindex
+*/
 import React, {Component} from "react";
 import {AppBar, Button, Drawer, ListItem, ListItemIcon, ListItemText, MenuList, Toolbar} from "@material-ui/core";
 import {Routes} from "./routes";
@@ -48,7 +51,7 @@ export default class NavBar extends Component {
             </NavBarDiv>
         );
         return (
-            <AppBar style={{background: '#003d6b'}} position="static">
+            <AppBar style={{background: '#003d6b', zIndex: 1}} position="fixed">
                 <Toolbar>
                     <Button color={"inherit"} onClick={this.toggleDrawer(true)}>Menu</Button>
                     <Drawer transitionDuration={300} open={this.state.drawerState}
