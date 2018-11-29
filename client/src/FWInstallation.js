@@ -29,9 +29,9 @@ export default class FWInstallation extends Component {
                         Requirements
                     </Monkey> 
                     <p>
-                        Before installing ReactJS you must first ensure that you have both
-                        Node.js and NPM properly installed on your device. You can check this
-                        by using the commands below into command prompt or terminal: 
+                        Before installing ReactJS you must ensure that both
+                        Node.js and NPM have been properly installed on your device. You can check this
+                        by using the commands below i command prompt or terminal: 
                         <br></br>
                         <br></br>
                         <Wrapper>
