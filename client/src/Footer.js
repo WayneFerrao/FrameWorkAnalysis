@@ -49,7 +49,7 @@ export default class Footer extends Component{
 
                     <FooterBoxes>
                         <FooterSTitle>
-                            Anime
+                            Favourite Anime
                         </FooterSTitle>
                         <FooterSubCategory>
                             <FooterSContent>
