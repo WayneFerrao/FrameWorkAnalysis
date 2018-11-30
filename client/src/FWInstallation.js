@@ -30,21 +30,21 @@ const PageContent = styled.div`
     padding: 6% 19% 2%;
 `
 export default class FWInstallation extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <NavBar/>
                 <PageContent>
                     <StyledH1 id = "react">
                         React Installation
                     </StyledH1>
-                    <StyledH2 id = "requirements">
+                    <StyledH2 id="requirements">
                         Requirements
-                    </StyledH2> 
+                    </StyledH2>
                     <StyledP>
                         Before installing ReactJS you must ensure that both
                         Node.js and NPM have been properly installed on your device. You can check this
-                        by using the commands below i command prompt or terminal: 
+                        by using the commands below i command prompt or terminal:
                         <br></br>
                         <br></br>
                         <CodeBlock>
@@ -56,18 +56,19 @@ export default class FWInstallation extends Component {
                         </CodeBlock>
                         <br></br>
                         If it is properly
-                        installed it should output the version number 
+                        installed it should output the version number
                         <br></br>
-                    </StyledP>  
-                    <StyledH2 id = "node">
+                    </StyledP>
+                    <StyledH2 id="node">
                         Install Node.js and NPM
                     </StyledH2>
                     <StyledP>
                         If you do not have these programs on your device here are the links to the downloads for
-                        <a href ="https://nodejs.org/en/download/"> Node.js</a> and <a href = "https://www.npmjs.com/get-npm">NPM </a>
-                    </StyledP>  
-                    <StyledH2 id = "install">
-                        Installing React 
+                        <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
+                        href="https://www.npmjs.com/get-npm">NPM </a>
+                    </StyledP>
+                    <StyledH2 id="install">
+                        Installing React
                     </StyledH2>
                     <p>
                         Once you have ensured that you have NodeJs and NPM you will next install using:
@@ -100,8 +101,8 @@ export default class FWInstallation extends Component {
                         </CodeBlock>
                         <br></br>
                         it should show open the default react application in your browser.
-                    </StyledP>  
-                    <StyledH1 id ="backend" >
+                    </StyledP>
+                    <StyledH1 id="backend">
                         Backend Installation
                     </StyledH1>
                 </PageContent>
@@ -117,8 +118,8 @@ export default class FWInstallation extends Component {
                 </div>
                 <Footer/>
             </div>
-       
+
         )
     }
-    
+
 }

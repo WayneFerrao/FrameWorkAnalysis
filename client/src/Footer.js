@@ -37,29 +37,21 @@ const FooterSContent = styled.h4`
     font-family: 'Roboto';
     font-weight: 300;
 `;
+const FooterLink = styled.a`
+    color: #5a5a5a;
+    text-decoration: none;
+    :hover{
+      text-decoration: underline;
+      color: #424242;
+  }
+`;
+export default class Footer extends Component {
 
-export default class Footer extends Component{
 
-
-    render(){
-        return(
+    render() {
+        return (
             <FooterBG>
                 <FooterDiv>
-
-                    <FooterBoxes>
-                        <FooterSTitle>
-                            Favourite Anime
-                        </FooterSTitle>
-                        <FooterSubCategory>
-                            <FooterSContent>
-                                Naruto
-                            </FooterSContent>
-                            <FooterSContent>
-                                Attack on Titan
-                            </FooterSContent>
-                        </FooterSubCategory>
-                    </FooterBoxes>
-
                     <FooterBoxes>
                         <FooterSTitle>
                             Social Media
@@ -79,10 +71,27 @@ export default class Footer extends Component{
                         </FooterSTitle>
                         <FooterSubCategory>
                             <FooterSContent>
-                                React Docs
+                                <FooterLink href="https://reactjs.org/">React Docs</FooterLink>
                             </FooterSContent>
                             <FooterSContent>
-                                NodeJS Docs
+                                <FooterLink href = "https://nodejs.org/en/">
+                                    NodeJS Docs
+                                </FooterLink>
+                            </FooterSContent>
+                            <FooterSContent>
+                                <FooterLink href = "https://reacttraining.com/react-router/web/guides/quick-start">
+                                    React Router
+                                </FooterLink>
+                            </FooterSContent>
+                            <FooterSContent>
+                                <FooterLink href = "https://www.styled-components.com/docs">
+                                    Styled Components
+                                </FooterLink>
+                            </FooterSContent>
+                            <FooterSContent>
+                                <FooterLink href = "https://material-ui.com/getting-started/installation/">
+                                    MaterialUI
+                                </FooterLink>
                             </FooterSContent>
                         </FooterSubCategory>
                     </FooterBoxes>
