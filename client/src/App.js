@@ -9,7 +9,7 @@ import FWInstallation from "./FWInstallation";
 import Demo from "./Demo";
 import Conclusion from "./Conclusion";
 import Credits from "./Credits";
-import styled, { keyframes } from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 
 const ReactRotate = keyframes` 
@@ -56,6 +56,11 @@ const ImgContainer = styled.div`
     display: flex;
     flex-direction: row-reverse; 
 `;
+const FWContentContainer = styled.div`
+    display: flex;
+    flex-direction: row
+    justify-content: space-between;
+`;
 
 
 export default class App extends Component {
@@ -78,13 +83,16 @@ export default class App extends Component {
                             <NodeJsImage src={nodeJsImg}/>
                         </ImgContainer>
                     </Container>
+                    <FWContentContainer>
+                        <h1>Pros</h1>
+                        <h1>Pros</h1>
+                    </FWContentContainer>
                     <Footer/>
                 </div>
 
             )
         ;
         return (
-
             <Router>
                 <div>
                     <Route exact path='' component={Home}/>
