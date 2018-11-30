@@ -1,4 +1,4 @@
-import { Home, Notifications, AccountCircle } from '@material-ui/icons';
+import {Home, Notifications, AccountCircle} from '@material-ui/icons';
 import PageTutorial from "./PageTutorial";
 import FWInstallation from "./FWInstallation";
 import Demo from "./Demo";
@@ -11,7 +11,8 @@ export const Routes = [
         sidebarName: 'Home',
         path: '',
         icon: Home,
-        component: Home
+        component: Home,
+        content: " this is deku he sucknskj"
     },
     {
         sidebarName: 'Tutorial',

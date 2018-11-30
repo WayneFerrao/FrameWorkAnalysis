@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = {
   card: {
-    maxWidth: 310
+    maxWidth: 210
   },
   media: {
     objectFit: "cover"
@@ -29,11 +29,11 @@ function ImgMediaCard(props) {
           className={classes.media}
           height="180"
           image="https://images-na.ssl-images-amazon.com/images/I/91kjVOEopVL._SY606_.jpg"
-          title="Boku no Hero Academia"
+          title="eat my asscheeks"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Boku no Hero Academia
+eat my asscheeks
           </Typography>
           <Typography component="p">
             A superhero-loving boy without any powers is determined to enroll in
