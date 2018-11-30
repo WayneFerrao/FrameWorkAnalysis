@@ -16,12 +16,12 @@ const StyledImg = styled.img`
 const TabContent = styled.div`
   height: 400px;
 `
-const Header = styled.h3`
+const Header = styled.h2`
     color: #5b73b4;
-    font-size: 15px;
 `
 const StyledP = styled.p`
     font-family: Roboto;
+    font-size: 15px
 `
 function TabContainer(props) {
   return (
@@ -67,7 +67,7 @@ class CreditTabs extends React.Component {
         </AppBar>
         {value === 0 && <TabContainer>
           <TabContent>
-            <StyledImg src = "https://i.imgur.com/nTsc3jv.png"></StyledImg>
+            <StyledImg src = "http://s3.amazonaws.com/hiphopdx-production/2015/09/Slim-Jesus-Drill-Time-Video.jpg"></StyledImg>
           <StyledP>
             <Header>Name:</Header>Buowen Cao
             <Header>Responsablities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
@@ -76,12 +76,35 @@ class CreditTabs extends React.Component {
         </TabContent>
         </TabContainer>}
         {value === 1 && <TabContainer>
-          Item Two
-          </TabContainer>}
-        {value === 2 && <TabContainer>Item Three</TabContainer>}
+          <TabContent>
+            <StyledImg src = "https://i.imgur.com/xIATfWd.jpg"></StyledImg>
+          <StyledP>
+            <Header>Name:</Header>Wayne Ferrao
+            <Header>Responsablities:</Header> Insert stuff
+            <Header>References: </Header> Stuff       
+          </StyledP>
+        </TabContent>
+        </TabContainer>}
+        {value === 2 && <TabContainer>
+          <TabContent>
+            <StyledImg src = "https://i.imgur.com/ucAAVKT.jpg"></StyledImg>
+          <StyledP>
+            <Header>Name:</Header>Brandon Quach
+            <Header>Responsablities:</Header> Stuff
+            <Header>References: </Header> Stuff
+          </StyledP>
+        </TabContent>
+        </TabContainer>}
         {value === 3 && <TabContainer>
-          Item Two
-          </TabContainer>}
+          <TabContent>
+            <StyledImg src = "https://i.imgur.com/963gGR7.jpg"></StyledImg>
+          <StyledP>
+            <Header>Name:</Header>Jason Yu
+            <Header>Responsablities:</Header> Stuff
+            <Header>References: </Header> Stuff 
+          </StyledP>
+        </TabContent>
+        </TabContainer>}
       </div>
     );
   }
