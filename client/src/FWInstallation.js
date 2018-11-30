@@ -25,12 +25,15 @@ const StyledH1 = styled.h1`
 const StyledP = styled.p`
     font-family: Roboto;
 `
+const PageContent = styled.div`
+    padding: 6% 19% 2%;
+`
 export default class FWInstallation extends Component {
     render(){
         return(
             <div>
                 <NavBar/>
-                <div style={{padding: '6% 19% 2%'}}>
+                <PageContent>
                     <StyledH1 id = "react">
                         React Installation
                     </StyledH1>
@@ -79,7 +82,7 @@ export default class FWInstallation extends Component {
                     </StyledH2>
                     <StyledP>
                         If you have correctly installed the React you will now be able to create your first
-                        application. In your command prompt or terminal navigate to the file that you want your
+                        application. In your command prompt or terminal, navigate to the file that you want your
                         application to be held in and enter:
                         <br></br>
                         <br></br>
@@ -87,8 +90,8 @@ export default class FWInstallation extends Component {
                             npm create-react-app
                         </CodeBlock>
                         <br></br>
-                        You will then have to wait possibly a couple minutes before it finishes loading
-                        enter:
+                        You will then have to wait possibly a couple minutes before it finishes loading. Once
+                        it has finished enter:
                         <br></br>
                         <br></br>
                         <CodeBlock>
@@ -100,7 +103,7 @@ export default class FWInstallation extends Component {
                     <StyledH1 id ="backend" >
                         Backend Installation
                     </StyledH1>
-                </div>
+                </PageContent>
                 <div>
                 <TableContents>
                 <br></br><a href = "#react" style = {{textDecoration: "none",color: "#003d6b" }}>React Installation</a> <br></br>
