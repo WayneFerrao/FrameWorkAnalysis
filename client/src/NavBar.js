@@ -14,11 +14,13 @@ export default class NavBar extends Component {
             drawerState: false,
         }
     }
+
     toggleDrawer = (open) => () => {
         this.setState({
             drawerState: open,
         });
     };
+
     render() {
         return (
             <AppBar style={{background: '#003d6b', zIndex: 1}} position="fixed">
