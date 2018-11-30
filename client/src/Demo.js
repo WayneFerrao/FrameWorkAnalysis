@@ -11,7 +11,6 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import NavBar from "./NavBar";
 import Card1 from './Card1';
-import Card2 from './Card2';
 import {CardData} from './CardData';
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -22,7 +21,6 @@ const styles = {
   height: 200,
   margin: 25
 }
-
 export default class Demo extends Component {
     render(){
         return(
@@ -58,8 +56,8 @@ export default class Demo extends Component {
             <Grid item md={3}>
             <Card1 CardData={CardData[1]}/>
 
-</Grid>
-</Grid>
+          </Grid>
+          </Grid>
             </div>
         )
     }
