@@ -5,7 +5,24 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-
+import styled from 'styled-components';
+const StyledImg = styled.img`
+    max-height:80%; 
+    max-width:80%;
+    object-fit: contain;
+    float: left;
+    padding-right: 3%;
+`
+const TabContent = styled.div`
+  height: 400px;
+`
+const Header = styled.h3`
+    color: #5b73b4;
+    font-size: 15px;
+`
+const StyledP = styled.p`
+    font-family: Roboto;
+`
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -49,17 +66,22 @@ class CreditTabs extends React.Component {
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer>
-          <div style = {{float:"left"}}>
-        <img src = "https://res.cloudinary.com/teepublic/image/private/s--KvRn7ey3--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1512231713/production/designs/39441_1.jpg"></img>
-        </div>
-      
-        <div style = {{float:"left"}}>
-        yeet yeet yeet <br></br>
-        yeet
-        </div>
+          <TabContent>
+            <StyledImg src = "https://i.imgur.com/nTsc3jv.png"></StyledImg>
+          <StyledP>
+            <Header>Name:</Header>Buowen Cao
+            <Header>Responsablities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
+            <Header>References: </Header> <a href = "https://material-ui.com/demos/drawers/">Drawers,</a> <a href ="https://material-ui.com/demos/tabs/"> Tabs</a>       
+          </StyledP>
+        </TabContent>
         </TabContainer>}
-        {value === 1 && <TabContainer>Item Two</TabContainer>}
+        {value === 1 && <TabContainer>
+          Item Two
+          </TabContainer>}
         {value === 2 && <TabContainer>Item Three</TabContainer>}
+        {value === 3 && <TabContainer>
+          Item Two
+          </TabContainer>}
       </div>
     );
   }
