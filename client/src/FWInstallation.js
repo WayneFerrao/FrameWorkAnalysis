@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import NavBar from "./NavBar";
 import TableContents from "./TableContents";
 import Footer from "./Footer";
+import Navigation from "./Navigation";
 const CodeBlock = styled.section`
   padding: 2em;
   background: #C0C0C0;
@@ -105,13 +106,13 @@ export default class FWInstallation extends Component {
                     </StyledH1>
                 </PageContent>
                 <div>
-                <TableContents>
-                <br></br><a href = "#react" style = {{textDecoration: "none",color: "#003d6b" }}>React Installation</a> <br></br>
-                <br></br><a href = "#requirements" style = {{textDecoration: "none",color: "#003d6b" }}>Requirements</a> <br></br>
-                <br></br><a href = "#node" style = {{textDecoration: "none",color: "#003d6b" }}>Install Node.js and NPM</a> <br></br>
-                <br></br><a href = "#install" style = {{textDecoration: "none",color: "#003d6b" }}>Installing React</a> <br></br>
-                <br></br><a href = "#check" style = {{textDecoration: "none",color: "#003d6b" }}>Creating your First React application</a> <br></br>
-                <br></br><a href = "#backend" style = {{textDecoration: "none",color: "#003d6b" }}>Backend Installation</a>
+                <TableContents>    
+                <br></br><Navigation link = "#react" text = "React Installation"/> <br></br>
+                <br></br><Navigation link = "#requirements" text = "Requirements"/> <br></br>
+                <br></br><Navigation link = "#node" text = "Install Node.js and NPM"/> <br></br>
+                <br></br><Navigation link = "#install" text = "Installing React"/> <br></br>
+                <br></br><Navigation link = "#check" text = "Creating your First React Application"/> <br></br>
+                <br></br><Navigation link = "#backend" text = "Backend Installation"/> <br></br>
                 </TableContents>
                 </div>
                 <Footer/>

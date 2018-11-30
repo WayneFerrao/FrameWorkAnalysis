@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import TableContents from "./TableContents";
 import Footer from "./Footer";
 import styled from 'styled-components';
+import Navigation from "./Navigation";
 const PageContent = styled.div`
     padding: 6% 19% 2%;
 `
@@ -159,7 +160,7 @@ export default class PageTutorial extends Component {
                     <StyledP>PlaceHolder text</StyledP>
                 </PageContent>
                 <TableContents>
-                    <br></br><a href = "#yeet" style = {{textDecoration: "none",color: "#003d6b" }}>PlaceHolder</a> <br></br>
+                <br></br><Navigation link = "#yeet" text = "PlaceHolder"/> <br></br>
                 </TableContents>
                 <Footer/>
             </div>
