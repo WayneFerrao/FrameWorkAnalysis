@@ -167,4 +167,4 @@ export default class PageTutorial extends Component {
         )
     }
 
-}
+}   
