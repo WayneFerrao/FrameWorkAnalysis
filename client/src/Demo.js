@@ -15,15 +15,39 @@ import Card2 from './Card2';
 import {CardData} from './CardData';
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import Avatar from "@material-ui/core/Avatar"
 
+const styles = {
+  width: 200,
+  height: 200,
+  margin: 25
+}
 
 export default class Demo extends Component {
     render(){
         return(
           <div>
             <NavBar/>
-            <Grid container spacing={10}   style={{ minHeight: '100vh' }}   justify="center"   alignItems="center"
->
+            <Grid container justify = "center" align Items = "center">
+              <Avatar
+                style = {styles}
+                src="https://i.imgur.com/nTsc3jv.png"
+              />
+              <Avatar
+                style = {styles}
+                src="https://i.imgur.com/xIATfWd.jpg"
+              />
+              <Avatar
+                style = {styles}
+                src="https://i.imgur.com/ucAAVKT.jpg"
+              />
+              <Avatar
+                style = {styles}
+                src="https://i.imgur.com/963gGR7.jpg"
+              />
+              </Grid>
+              <hr/>
+            <Grid container spacing={10}   style={{ minHeight: '70vh' }}   justify="center"   alignItems="center">
             <Grid item md={3}>
             <Card1 CardData={CardData[0]}/>
             </Grid>
