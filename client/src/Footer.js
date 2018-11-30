@@ -39,11 +39,11 @@ const FooterSContent = styled.h4`
     font-weight: 300;
 `;
 
-export default class Footer extends Component{
+export default class Footer extends Component {
 
 
-    render(){
-        return(
+    render() {
+        return (
             <FooterBG>
                 <FooterDiv>
 
