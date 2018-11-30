@@ -79,7 +79,7 @@ export default class FWInstallation extends Component {
                         <br></br>
                     </p>  
                     <StyledH2 id = "check">
-                        Creating your First React application
+                        Creating your First React Application
                     </StyledH2>
                     <StyledP>
                         If you have correctly installed the React you will now be able to create your first
