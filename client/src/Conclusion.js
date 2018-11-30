@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import NavBar from "./NavBar";
-
+import Footer from "./Footer";
 import styled from 'styled-components';
 
 export default class Conclusion extends Component {
@@ -9,6 +9,8 @@ export default class Conclusion extends Component {
             <div>
                 <NavBar/>
                 <div style={{padding: '2% 18% 2%',}}>
+                    <br/>
+                    <br/>
                     <h1>
                         Rating</h1>
                     <p> i want to die </p>
@@ -33,6 +35,7 @@ export default class Conclusion extends Component {
 
                     </p>
                 </div>
+                <Footer/>
             </div>
         )
     }

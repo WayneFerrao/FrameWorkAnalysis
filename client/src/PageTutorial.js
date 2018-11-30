@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Particles from 'react-particles-js';
 import NavBar from "./NavBar";
+import Footer from './Footer';
 
 import styled from 'styled-components';
 
@@ -136,6 +137,7 @@ export default class PageTutorial extends Component {
                     />
                 </Background>
                 <h1> this is the Tutorial on how to make a page with react and React JS</h1>
+                <Footer/>
             </div>
 
         )
