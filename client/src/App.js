@@ -14,21 +14,21 @@ import styled, {keyframes} from 'styled-components';
 
 const ReactRotate = keyframes` 
     from {
-        transform: rotate(360deg);
         opacity: 0;
+        top: 50px;
     }
     to {
-        transform: rotate(0deg);
+        top:0px;
         opacity: 1;
     }
 `;
 const nodeJSSlide = keyframes` 
    from {
-        transform: rotate(0deg);
         opacity: 0;
+        right: -2%;
     }
     to {
-        transform: rotate(360deg);
+    right: 0%;
         opacity: 1;
     }
 `;
@@ -69,7 +69,7 @@ const NodeJsImage = styled.img`
     width: 40%;
     height:45%;
     margin-top:5%;
-    margin-left: 9%;
+    margin-left: 6%;
     animation: ${nodeJSSlide} 1.5s linear normal;
 `;
 const Banner = styled.div`
@@ -84,7 +84,7 @@ const ReactHypeQuote = styled.h1`
     font-family: 'Roboto';
     font-weight: 300;
     margin-top: 5%;
-    margin-right: 5%;
+    margin-right: 1%;
     font-size: 3.1vw;
     animation: ${reactQAnim} 1.5s linear normal;
 `;
@@ -94,7 +94,7 @@ const NodeHypeQuote = styled.h1`
     font-weight: 300;
     margin-top: 5%;
     margin-left: 9%;
-    margin-right: 18%;
+    margin-right: 20%;
     font-size: 3.1vw;
     animation: ${nodeQAnim} 1.5s linear normal;
 `;
@@ -113,16 +113,33 @@ const FWContentContainer = styled.div`
     width: 100%;
 `;
 const IndividualContainer = styled.div`
-    margin-left: 4%;
+    margin-left: 3%;
     width: 55%;
+    padding-right: 2%;
+    border-right:1px solid #eeeeee;
+    height:500px;
 `;
 const ProConWhy = styled.h1`
     font-family: 'Roboto';
-    font-weight: 700;
+    font-weight: 500;
 `;
-const PCWPoint = styled.h2`
+const ProConWhySubTitle = styled.h2`
+    font-family: 'Roboto';
+    color: #424242;
+    font-weight: 400;
+`;
+const PCWPointDiv = styled.div`
+ border-bottom:1px solid #eeeeee;
+    
+`;
+const PCWPoint = styled.h3`
+    color: #5a5a5a;
     font-family: 'Roboto';
     font-weight: 300;
+    font-size:0.95em;
+`;
+const Vertical = styled.div`
+     border-right:1px solid #eeeeee;
 `;
 
 
@@ -156,14 +173,38 @@ export default class App extends Component {
                     </Banner>
                     <FWContentContainer>
                         <IndividualContainer>
-                            <ProConWhy>Pros</ProConWhy>
+                            <ProConWhy>What is it?</ProConWhy>
                             <PCWPoint>
-                                So react is pretty lit. It has a cool DOM( document object model) that allows for like hot
-                                reloading.
+                                Node JS is an open-source, cross-platform server environment that runs Javascript code
+                                outside of the browser.
+                            </PCWPoint>
+                            <PCWPointDiv/>
+                            <ProConWhy>Pros</ProConWhy>
+                            <ProConWhySubTitle>Node Pro 1</ProConWhySubTitle>
+                            <PCWPoint>
+                                kjbfkjsdbkjd a ahash asha saioschochaoiscoahso iashoi ahsoi soidh ioshfios fioahoihoi
+                                dhsoidhfios hoshiossdsoidhiosfiosoisho isidhf   io hiohio ioio oiuiouio io bjhvv
                             </PCWPoint>
                         </IndividualContainer>
+                        <Vertical/>
                         <IndividualContainer>
+                            <ProConWhy>What is it?</ProConWhy>
+                            <PCWPointDiv>
+                                <PCWPoint>
+                                    So React is pretty lit. It has a cool DOM( document object model) that allows for like
+                                    hot reloading and easy checks for your code
+                                </PCWPoint>
+                            </PCWPointDiv>
                             <ProConWhy>Pros</ProConWhy>
+                            <ProConWhySubTitle>The Virtual DOM</ProConWhySubTitle>
+                            <PCWPoint>
+                                So react is pretty lit. It has a cool DOM( document object model) that allows for like hot
+                                reloading
+                            </PCWPoint>
+                            <ProConWhySubTitle>Reusable Components</ProConWhySubTitle>
+                            <PCWPoint>
+                                Shit's reusable dawg
+                            </PCWPoint>
                         </IndividualContainer>
                     </FWContentContainer>
                     <Footer/>
