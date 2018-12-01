@@ -14,11 +14,13 @@ export default class NavBar extends Component {
             drawerState: false,
         }
     }
+
     toggleDrawer = (open) => () => {
         this.setState({
             drawerState: open,
         });
     };
+
     render() {
         return (
             <AppBar style={{background: '#003d6b', zIndex: 1}} position="fixed">
@@ -36,7 +38,7 @@ export default class NavBar extends Component {
                                 {Routes.map((prop, key) => {
                                     return (
                                         <ListItem button component={Link} to={prop.path} key={prop.sidebarName}>
-                                            <ListItemIcon>
+                                            <ListItemIcon sharp >
                                                 <prop.icon/>
                                             </ListItemIcon>
                                             <ListItemText primary={prop.sidebarName}/>
