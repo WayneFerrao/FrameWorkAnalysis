@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import CreditTabs from './CreditTabs';
 const PageContent = styled.div`
     padding: 9% 5% 9%;
-    height 500px;
+    height 32em;
 `
 export default class Credits extends Component {
     render() {

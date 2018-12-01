@@ -14,14 +14,14 @@ const StyledImg = styled.img`
     padding-right: 3%;
 `
 const TabContent = styled.div`
-  height: 400px;
+  height: 30em;
 `
 const Header = styled.h2`
     color: #5b73b4;
 `
 const StyledP = styled.p`
     font-family: Roboto;
-    font-size: 15px
+    font-size: 1em
 `
 function TabContainer(props) {
   return (
@@ -58,7 +58,7 @@ class CreditTabs extends React.Component {
     return (
       <div className={classes.root}>
         <AppBar position="static">
-          <Tabs value={value} onChange={this.handleChange}>
+          <Tabs value={value} onChange={this.handleChange} centered>
             <Tab label="Buowen Cao" />
             <Tab label="Wayne Ferrao" />
             <Tab label="Brandon Quach" />
