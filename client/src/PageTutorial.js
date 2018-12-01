@@ -12,20 +12,20 @@ const Background = styled.div`
     background-color: #4285f4;
     display: inline-block;
 `;
-const StyledH2 = styled.h2`
+const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
     color: #7997d6;
     font-family: Roboto;
 `
-const StyledH1 = styled.h1`
+const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
     color: #5b73b4;
     font-size: 40px;
     font-family: Roboto;
 `
-const StyledP = styled.p`
+const Content = styled.p`
     font-family: Roboto;
 `
 export default class PageTutorial extends Component {
@@ -155,9 +155,9 @@ export default class PageTutorial extends Component {
                             width="200px"
                         />
                     </Background>
-                    <StyledH1 id ="yeet"> Place Holder 1st header</StyledH1>
-                    <StyledH2> Place Holder 2nd header </StyledH2>
-                    <StyledP>PlaceHolder text</StyledP>
+                    <MainHeader id ="yeet"> Place Holder 1st header</MainHeader>
+                    <SubHeader> Place Holder 2nd header </SubHeader>
+                    <Content>PlaceHolder text</Content>
                 </PageContent>
                 <TableContents>
                 <br></br><Navigation link = "#yeet" text = "PlaceHolder"/> <br></br>

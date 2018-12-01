@@ -10,20 +10,20 @@ const CodeBlock = styled.section`
   border-radius: 7px;
 `;
 //anchors werent working properly cause of appbar and im too low iq to think of a good solution
-const StyledH2 = styled.h2`
+const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
     color: #7997d6;
     font-family: Roboto;
 `
-const StyledH1 = styled.h1`
+const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
     color: #5b73b4;
     font-size: 40px;
     font-family: Roboto;
 `
-const StyledP = styled.p`
+const Content = styled.p`
     font-family: Roboto;
 `
 const PageContent = styled.div`
@@ -35,13 +35,13 @@ export default class FWInstallation extends Component {
             <div>
                 <NavBar/>
                 <PageContent>
-                    <StyledH1 id = "react">
+                    <MainHeader id = "react">
                         React Installation
-                    </StyledH1>
-                    <StyledH2 id="requirements">
+                    </MainHeader>
+                    <SubHeader id="requirements">
                         Requirements
-                    </StyledH2>
-                    <StyledP>
+                    </SubHeader>
+                    <Content>
                         Before installing ReactJS you must ensure that both
                         Node.js and NPM have been properly installed on your device. You can check this
                         by using the commands below i command prompt or terminal:
@@ -58,18 +58,18 @@ export default class FWInstallation extends Component {
                         If it is properly
                         installed it should output the version number
                         <br></br>
-                    </StyledP>
-                    <StyledH2 id="node">
+                    </Content>
+                    <SubHeader id="node">
                         Install Node.js and NPM
-                    </StyledH2>
-                    <StyledP>
+                    </SubHeader>
+                    <Content>
                         If you do not have these programs on your device here are the links to the downloads for
                         <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
                         href="https://www.npmjs.com/get-npm">NPM </a>
-                    </StyledP>
-                    <StyledH2 id="install">
+                    </Content>
+                    <SubHeader id="install">
                         Installing React
-                    </StyledH2>
+                    </SubHeader>
                     <p>
                         Once you have ensured that you have NodeJs and NPM you will next install using:
                         <br></br>
@@ -79,10 +79,10 @@ export default class FWInstallation extends Component {
                         </CodeBlock>
                         <br></br>
                     </p>  
-                    <StyledH2 id = "check">
+                    <SubHeader id = "check">
                         Creating your First React Application
-                    </StyledH2>
-                    <StyledP>
+                    </SubHeader>
+                    <Content>
                         If you have correctly installed the React you will now be able to create your first
                         application. In your command prompt or terminal, navigate to the file that you want your
                         application to be held in and enter:
@@ -101,10 +101,10 @@ export default class FWInstallation extends Component {
                         </CodeBlock>
                         <br></br>
                         it should show open the default react application in your browser.
-                    </StyledP>
-                    <StyledH1 id="backend">
+                    </Content>
+                    <MainHeader id="backend">
                         Backend Installation
-                    </StyledH1>
+                    </MainHeader>
                 </PageContent>
                 <div>
                 <TableContents>    

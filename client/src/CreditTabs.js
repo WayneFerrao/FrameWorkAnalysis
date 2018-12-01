@@ -6,6 +6,10 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
+import Buowen from './assets/meirl.png';
+import Brandon from './assets/brandone.png';
+import Jason from './assets/json.png';
+import Wayne from './assets/wane.png';
 const StyledImg = styled.img`
     max-height:80%; 
     max-width:80%;
@@ -67,7 +71,7 @@ class CreditTabs extends React.Component {
         </AppBar>
         {value === 0 && <TabContainer>
           <TabContent>
-            <StyledImg src = "http://s3.amazonaws.com/hiphopdx-production/2015/09/Slim-Jesus-Drill-Time-Video.jpg"></StyledImg>
+            <StyledImg src ={Buowen}></StyledImg>
           <StyledP>
             <Header>Name:</Header>Buowen Cao
             <Header>Responsablities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
@@ -77,7 +81,7 @@ class CreditTabs extends React.Component {
         </TabContainer>}
         {value === 1 && <TabContainer>
           <TabContent>
-            <StyledImg src = "https://i.imgur.com/xIATfWd.jpg"></StyledImg>
+            <StyledImg src ={Wayne}></StyledImg>
           <StyledP>
             <Header>Name:</Header>Wayne Ferrao
             <Header>Responsablities:</Header> Insert stuff
@@ -87,7 +91,7 @@ class CreditTabs extends React.Component {
         </TabContainer>}
         {value === 2 && <TabContainer>
           <TabContent>
-            <StyledImg src = "https://i.imgur.com/ucAAVKT.jpg"></StyledImg>
+            <StyledImg src = {Brandon}></StyledImg>
           <StyledP>
             <Header>Name:</Header>Brandon Quach
             <Header>Responsablities:</Header> Stuff
@@ -97,7 +101,7 @@ class CreditTabs extends React.Component {
         </TabContainer>}
         {value === 3 && <TabContainer>
           <TabContent>
-            <StyledImg src = "https://i.imgur.com/963gGR7.jpg"></StyledImg>
+            <StyledImg src = {Jason}></StyledImg>
           <StyledP>
             <Header>Name:</Header>Jason Yu
             <Header>Responsablities:</Header> Stuff
