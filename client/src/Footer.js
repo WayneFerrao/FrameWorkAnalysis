@@ -6,7 +6,6 @@ const FooterBG = styled.div`
     bottom: 0px;
     height: 30%;
     background-color: #eeeeee;
-    
 `;
 const FooterDiv = styled.div`
     display: flex;
