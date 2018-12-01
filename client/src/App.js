@@ -15,20 +15,20 @@ import styled, {keyframes} from 'styled-components';
 const ReactRotate = keyframes` 
     from {
         opacity: 0;
-        top: 50px;
+        margin-left: -0%;
     }
     to {
-        top:0px;
+        margin-left:3%;
         opacity: 1;
     }
 `;
 const nodeJSSlide = keyframes` 
    from {
         opacity: 0;
-        right: -2%;
+        margin-left: 3%;
     }
     to {
-    right: 0%;
+        margin-left: 6%;
         opacity: 1;
     }
 `;
@@ -61,7 +61,7 @@ const reactQAnim = keyframes`
 const ReactImage = styled.img`
     width: 45%;
     height:10%;
-    margin:3%;
+    margin-left:3%;
     animation: ${ReactRotate} 1.5s linear normal;
 `;
 
@@ -89,7 +89,7 @@ const ReactHypeQuote = styled.h1`
     animation: ${reactQAnim} 1.5s linear normal;
 `;
 const NodeHypeQuote = styled.h1`
-    color: #78B561
+    color: #78B561;
     font-family: 'Roboto';
     font-weight: 300;
     margin-top: 5%;
@@ -117,7 +117,6 @@ const IndividualContainer = styled.div`
     width: 55%;
     padding-right: 2%;
     border-right:1px solid #eeeeee;
-    height:500px;
 `;
 const ProConWhy = styled.h1`
     font-family: 'Roboto';
@@ -167,23 +166,42 @@ export default class App extends Component {
                         <ImgContainer>
                             <NodeHypeQuote> Simple & Versatile</NodeHypeQuote>
                             <ReactHypeQuote> Highly Dynamic & Responsive</ReactHypeQuote>
-
                         </ImgContainer>
-
                     </Banner>
                     <FWContentContainer>
                         <IndividualContainer>
                             <ProConWhy>What is it?</ProConWhy>
                             <PCWPoint>
-                                Node JS is an open-source, cross-platform server environment that runs Javascript code
-                                outside of the browser.
+                                Node JS is an open-source cross-platform runtime environment, built on Google's V8
+                                Javascript engine that runs Javascript code on the server side. It uses an event-driven,
+                                non-blocking I/O model that makes it light & efficient. Due to its simplicity, NodeJS is
+                                very popular and used frequently by developers for back-end development.
                             </PCWPoint>
                             <PCWPointDiv/>
                             <ProConWhy>Pros</ProConWhy>
-                            <ProConWhySubTitle>Node Pro 1</ProConWhySubTitle>
+                            <ProConWhySubTitle>Incredibly Fast</ProConWhySubTitle>
                             <PCWPoint>
-                                kjbfkjsdbkjd a ahash asha saioschochaoiscoahso iashoi ahsoi soidh ioshfios fioahoihoi
-                                dhsoidhfios hoshiossdsoidhiosfiosoisho isidhf   io hiohio ioio oiuiouio io bjhvv
+                                NodeJS uses a single thread, the event loop, as opposed to multiple threads to handle all
+                                asynchronous I/O operations.
+                            </PCWPoint>
+                            <ProConWhySubTitle>Easy Coding</ProConWhySubTitle>
+                            <PCWPoint>
+                                NodeJS lets developers to code in Javascript on both the client & server side of the
+                                application.
+                                This makes data transport simple & convenient.
+                            </PCWPoint>
+                            <PCWPointDiv/>
+                            <ProConWhy>Cons</ProConWhy>
+                            <ProConWhySubTitle>Unstable API</ProConWhySubTitle>
+                            <PCWPoint>
+                                Unfortunately, NodeJS lacks consistency as its API updates frequently & these changes are
+                                often
+                                backward-incompatible.
+                            </PCWPoint>
+                            <ProConWhySubTitle>Unsuitable For Heavy Computing</ProConWhySubTitle>
+                            <PCWPoint>
+                                NodeJS does not currently support multi-threaded computing. While it can support complicated
+                                applications, heavy computations block incoming requests which decreases performance.
                             </PCWPoint>
                         </IndividualContainer>
                         <Vertical/>
@@ -191,19 +209,39 @@ export default class App extends Component {
                             <ProConWhy>What is it?</ProConWhy>
                             <PCWPointDiv>
                                 <PCWPoint>
-                                    So React is pretty lit. It has a cool DOM( document object model) that allows for like
-                                    hot reloading and easy checks for your code
+                                    React is simple declarative Javascript library used for building user interfaces. It
+                                    allows you to build isolated pieces of code called components that come together to
+                                    form a functional web-app. React will efficiently update and render the right
+                                    components when data changes. It's used by developers to build large web applications
+                                    without changing the data.
                                 </PCWPoint>
                             </PCWPointDiv>
                             <ProConWhy>Pros</ProConWhy>
                             <ProConWhySubTitle>The Virtual DOM</ProConWhySubTitle>
                             <PCWPoint>
-                                So react is pretty lit. It has a cool DOM( document object model) that allows for like hot
-                                reloading
+                                React uses a virtual DOM to update the smallest of changes applied by the user without
+                                affecting the rest of the interface. This allows for hot reloading and increased
+                                performance.
                             </PCWPoint>
                             <ProConWhySubTitle>Reusable Components</ProConWhySubTitle>
                             <PCWPoint>
-                                Shit's reusable dawg
+                                All React components are isolated & changes in one do not affect the others. This allows
+                                components, such as the footer on this page to be accessed & reused throughout this
+                                website.
+                            </PCWPoint>
+                            <PCWPointDiv/>
+                            <ProConWhy>Cons</ProConWhy>
+                            <ProConWhySubTitle>Steep Learning Curve</ProConWhySubTitle>
+                            <PCWPoint>
+                                React uses JSX elements, a syntax extension that allows for HTML to be mixed with
+                                JavaScript. For
+                                new users, this can be very unfamiliar & challenging to grasp at first
+                            </PCWPoint>
+                            <ProConWhySubTitle>Too Dynamic?</ProConWhySubTitle>
+                            <PCWPoint>
+                                The environment is constantly changing with the release of new updates & tools. This
+                                results in sub-par documentation & can therefore be a challenge for developers to
+                                integrate these tools.
                             </PCWPoint>
                         </IndividualContainer>
                     </FWContentContainer>
