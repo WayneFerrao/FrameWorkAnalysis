@@ -23,7 +23,7 @@ const TabContent = styled.div`
 const Header = styled.h2`
     color: #5b73b4;
 `
-const StyledP = styled.p`
+const Content = styled.p`
     font-family: Roboto;
     font-size: 1em
 `
@@ -72,41 +72,41 @@ class CreditTabs extends React.Component {
         {value === 0 && <TabContainer>
           <TabContent>
             <StyledImg src ={Buowen}></StyledImg>
-          <StyledP>
+          <Content>
             <Header>Name:</Header>Buowen Cao
             <Header>Responsablities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
             <Header>References: </Header> <a href = "https://material-ui.com/demos/drawers/">Drawers,</a> <a href ="https://material-ui.com/demos/tabs/"> Tabs</a>       
-          </StyledP>
+          </Content>
         </TabContent>
         </TabContainer>}
         {value === 1 && <TabContainer>
           <TabContent>
             <StyledImg src ={Wayne}></StyledImg>
-          <StyledP>
+          <Content>
             <Header>Name:</Header>Wayne Ferrao
             <Header>Responsablities:</Header> Insert stuff
             <Header>References: </Header> Stuff       
-          </StyledP>
+          </Content>
         </TabContent>
         </TabContainer>}
         {value === 2 && <TabContainer>
           <TabContent>
             <StyledImg src = {Brandon}></StyledImg>
-          <StyledP>
+          <Content>
             <Header>Name:</Header>Brandon Quach
             <Header>Responsablities:</Header> Stuff
             <Header>References: </Header> Stuff
-          </StyledP>
+          </Content>
         </TabContent>
         </TabContainer>}
         {value === 3 && <TabContainer>
           <TabContent>
             <StyledImg src = {Jason}></StyledImg>
-          <StyledP>
+          <Content>
             <Header>Name:</Header>Jason Yu
             <Header>Responsablities:</Header> Stuff
             <Header>References: </Header> Stuff 
-          </StyledP>
+          </Content>
         </TabContent>
         </TabContainer>}
       </div>
