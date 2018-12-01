@@ -19,7 +19,7 @@ export default class Demo extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <Grid container justify="center" align Items="center">
+                <Grid container justify="center" alignItems="center">
                     <Avatar
                         style={styles}
                         src="https://i.imgur.com/nTsc3jv.png"
