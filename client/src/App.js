@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import reactImg from './assets/reactImg.png';
 import nodeJsImg from './assets/nodejs.png';
-import {BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import PageTutorial from "./PageTutorial";
@@ -10,7 +10,6 @@ import Demo from "./Demo";
 import Conclusion from "./Conclusion";
 import Credits from "./Credits";
 import styled, {keyframes} from 'styled-components';
-
 
 const ReactRotate = keyframes` 
     from {
@@ -247,18 +246,18 @@ export default class App extends Component {
                     </FWContentContainer>
                     <Footer/>
                 </div>
-
             )
         ;
+
         return (
             <Router>
                 <div>
                     <Route exact path='' component={Home}/>
                     <Route exact path='/Tutorial' component={PageTutorial}/>
-                    <Route exact path='/Installation' render={(props) => <FWInstallation/>}/>
-                    <Route exact path='/DemoPage' render={(props) => <Demo/>}/>
-                    <Route exact path='/Conclusion' render={(props) => <Conclusion/>}/>
-                    <Route exact path='/Credits' render={(props) => <Credits/>}/>
+                    <Route exact path='/Installation' component={FWInstallation}/>
+                    <Route exact path='/DemoPage' component={Demo}/>
+                    <Route exact path='/Conclusion' component={Conclusion}/>
+                    <Route exact path='/Credits' component={Credits}/>
                 </div>
             </Router>
 
