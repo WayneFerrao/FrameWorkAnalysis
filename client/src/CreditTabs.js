@@ -31,6 +31,12 @@ const Content = styled.p`
     font-weight: 300;
     font-size: 1.15em
 `
+const Reference = styled.h4`
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-bottom: 0;
+`;
 
 function TabContainer(props) {
     return (
@@ -78,10 +84,12 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Buowen}></StyledImg>
                         <Content>
                             <Header>Name:</Header>Buowen Cao
-                            <Header>Responsiblities:</Header> Creating the installation page, creating sidebar for
+                            <Header>Responsibilities:</Header> Creating the installation page, creating sidebar for
                             easier navigation, made credits page, designing.
-                            <Header>References: </Header> <a href="https://material-ui.com/demos/drawers/">Drawers,</a>
-                            <a href="https://material-ui.com/demos/tabs/"> Tabs</a>
+                            <Header>References: </Header>
+
+                            <a href="https://material-ui.com/demos/drawers/"><Reference> Drawers, </Reference> </a>
+                            <a href="https://material-ui.com/demos/tabs/"> <Reference> Tabs </Reference> </a>
                         </Content>
                     </TabContent>
                 </TabContainer>}
@@ -90,9 +98,20 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Wayne}></StyledImg>
                         <Content>
                             <Header>Name:</Header>Wayne Ferrao
-                            <Header>Responsiblities:</Header> Creating the React Router routes & implementing them in the
+                            <Header>Responsibilities:</Header>
+                            Creating the React Router routes & implemented them in the
                             NavBar. Designed and coded the appearance and functionality of the Home page and Footer.
-                            <Header>References: </Header> Stuff
+                            <Header>References: </Header>
+                            <Reference>
+                                https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-reactjs-and-react-native/
+                            </Reference>
+                            <Reference>
+                                https://www.netguru.co/blog/pros-cons-use-node.js-backend
+                            </Reference>
+                            <Reference>
+                                https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png
+                            </Reference>
+
                         </Content>
                     </TabContent>
                 </TabContainer>}
@@ -101,8 +120,11 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Brandon}></StyledImg>
                         <Content>
                             <Header>Name:</Header>Brandon Quach
-                            <Header>Responsiblities:</Header> Stuff
-                            <Header>References: </Header> Stuff
+                            <Header>Responsibilities:</Header> Stuff
+                            <Header>References: </Header>
+                            <Reference>
+                                Stuff
+                            </Reference>
                         </Content>
                     </TabContent>
                 </TabContainer>}
@@ -111,8 +133,11 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Jason}></StyledImg>
                         <Content>
                             <Header>Name:</Header>Jason Yu
-                            <Header>Responsiblities:</Header> Stuff
-                            <Header>References: </Header> Stuff
+                            <Header>Responsibilities:</Header> Stuff
+                            <Header>References: </Header>
+                            <Reference>
+                                Stuff
+                            </Reference>
                         </Content>
                     </TabContent>
                 </TabContainer>}
