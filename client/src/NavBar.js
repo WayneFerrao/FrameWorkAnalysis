@@ -23,7 +23,7 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <AppBar style={{background: '#003d6b', zIndex: 1}} position="fixed">
+            <AppBar style={{background: 'black', zIndex: 1}} position="fixed">
                 <Toolbar>
                     <Button color={"inherit"} onClick={this.toggleDrawer(true)}>Menu</Button>
                     <Drawer transitionDuration={300} open={this.state.drawerState}

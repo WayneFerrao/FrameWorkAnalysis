@@ -6,25 +6,26 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 const CodeBlock = styled.section`
   padding: 2em;
-  background: #C0C0C0;
+  background: #000000;
+  color:lime;
   border-radius: 7px;
 `;
 //anchors werent working properly cause of appbar and im too low iq to think of a good solution
 const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
-    color: #7997d6;
-    font-family: Roboto;
+    color: #424242;
+    font-family: 'Roboto';
 `
 const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
-    color: #5b73b4;
-    font-size: 40px;
-    font-family: Roboto;
+    color: black;
+    font-size: 3em;
+    font-family: 'Roboto';
 `
 const Content = styled.p`
-    font-family: Roboto;
+    font-family: 'Roboto';
 `
 const PageContent = styled.div`
     padding: 6% 19% 2%;
