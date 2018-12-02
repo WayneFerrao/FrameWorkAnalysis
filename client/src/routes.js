@@ -4,7 +4,6 @@ import FWInstallation from "./FWInstallation";
 import Demo from "./Demo";
 import Conclusion from "./Conclusion";
 import Credits from "./Credits";
-import React from "react";
 
 export const Routes = [
     {
