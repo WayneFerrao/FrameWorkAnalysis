@@ -16,6 +16,7 @@ export default class Demo extends Component {
         return (
             <div>
                 <NavBar/>
+
                 <br/>
                 <br/>
                 <br/>
