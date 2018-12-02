@@ -74,7 +74,7 @@ class CreditTabs extends React.Component {
             <StyledImg src ={Buowen}></StyledImg>
           <Content>
             <Header>Name:</Header>Buowen Cao
-            <Header>Responsablities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
+            <Header>Responsiblities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
             <Header>References: </Header> <a href = "https://material-ui.com/demos/drawers/">Drawers,</a> <a href ="https://material-ui.com/demos/tabs/"> Tabs</a>       
           </Content>
         </TabContent>
@@ -84,7 +84,7 @@ class CreditTabs extends React.Component {
             <StyledImg src ={Wayne}></StyledImg>
           <Content>
             <Header>Name:</Header>Wayne Ferrao
-            <Header>Responsablities:</Header> Insert stuff
+            <Header>Responsiblities:</Header> Insert stuff
             <Header>References: </Header> Stuff       
           </Content>
         </TabContent>
@@ -94,7 +94,7 @@ class CreditTabs extends React.Component {
             <StyledImg src = {Brandon}></StyledImg>
           <Content>
             <Header>Name:</Header>Brandon Quach
-            <Header>Responsablities:</Header> Stuff
+            <Header>Responsiblities:</Header> Stuff
             <Header>References: </Header> Stuff
           </Content>
         </TabContent>
@@ -104,7 +104,7 @@ class CreditTabs extends React.Component {
             <StyledImg src = {Jason}></StyledImg>
           <Content>
             <Header>Name:</Header>Jason Yu
-            <Header>Responsablities:</Header> Stuff
+            <Header>Responsiblities:</Header> Stuff
             <Header>References: </Header> Stuff 
           </Content>
         </TabContent>
