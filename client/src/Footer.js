@@ -62,22 +62,6 @@ export default class Footer extends Component {
                     <FooterDiv>
                         <FooterBoxes>
                             <FooterSTitle>
-                                Social Media
-                            </FooterSTitle>
-                            <FooterSubCategory>
-                                <FooterSContent>
-                                    @wayne.ferrao
-                                </FooterSContent>
-                                <FooterSContent>
-                                    @jasonyu191
-                                </FooterSContent>
-                                <FooterSContent>
-                                    @brandon_quach
-                                </FooterSContent>
-                            </FooterSubCategory>
-                        </FooterBoxes>
-                        <FooterBoxes>
-                            <FooterSTitle>
                                 Documentation
                             </FooterSTitle>
                             <FooterSubCategory>
@@ -101,30 +85,60 @@ export default class Footer extends Component {
                                 </FooterSContent>
                                 <FooterSContent>
                                     <FooterLink href="https://material-ui.com/getting-started/installation/">
-                                        MaterialUI
+                                        Material UI
                                     </FooterLink>
                                 </FooterSContent>
                             </FooterSubCategory>
                         </FooterBoxes>
                         <FooterBoxes>
                             <FooterSTitle>
-                                Resumes
+                                Social Media
                             </FooterSTitle>
                             <FooterSubCategory>
                                 <FooterSContent>
-                                    Wayne Ferrao
+                                    <FooterLink
+                                        href="https://www.instagram.com/wayne.ferrao/?hl=en">@wayne.ferrao </FooterLink>
                                 </FooterSContent>
                                 <FooterSContent>
-                                    Jason Yu
+                                    <FooterLink
+                                        href="https://www.instagram.com/jasonyu191/?hl=en">@jasonyu191</FooterLink>
                                 </FooterSContent>
                                 <FooterSContent>
-                                    Buowen Cao
-                                </FooterSContent>
-                                <FooterSContent>
-                                    Brandon Quach
+                                    <FooterLink
+                                        href="https://www.instagram.com/brandon_quach/?hl=en">@brandon_quach</FooterLink>
                                 </FooterSContent>
                             </FooterSubCategory>
                         </FooterBoxes>
+                        <FooterBoxes>
+                            <FooterSTitle>
+                                Github
+                            </FooterSTitle>
+                            <FooterSubCategory>
+                                <FooterSContent>
+                                    <FooterLink href="https://github.com/WayneFerrao">
+                                        Wayne Ferrao
+                                    </FooterLink>
+                                </FooterSContent>
+                                <FooterSContent>
+                                    <FooterLink href="https://github.com/jasonyu191">
+                                        Jason Yu
+                                    </FooterLink>
+                                </FooterSContent>
+                                <FooterSContent>
+                                    <FooterLink href="https://github.com/Cao3000">
+                                        Buowen Cao
+                                    </FooterLink>
+                                </FooterSContent>
+                                <FooterSContent>
+                                    <FooterLink
+                                        href="https://github.com/brandonq2">
+                                        Brandon Quach
+                                    </FooterLink>
+                                </FooterSContent>
+                            </FooterSubCategory>
+                        </FooterBoxes>
+
+
                     </FooterDiv>
                 </FooterBG>
             </div>
