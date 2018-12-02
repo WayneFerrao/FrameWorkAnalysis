@@ -21,7 +21,7 @@ const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
     color: black;
-    font-size: 40px;
+    font-size: 3em;
     font-family: 'Roboto';
 `
 const Content = styled.p`
