@@ -8,7 +8,6 @@ import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
-const drawerWidth=240;
 const Wrapper = styled.section`
   padding: 10% 20% 10%;
   background: #888888;

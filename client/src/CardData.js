@@ -1,5 +1,3 @@
-import React from "react";
-
 export const CardData = [
 { image:"https://images-na.ssl-images-amazon.com/images/I/91kjVOEopVL._SY606_.jpg",
   title:"Boku no Hero Academia",

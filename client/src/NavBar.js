@@ -5,7 +5,6 @@ import React, {Component} from "react";
 import {AppBar, Button, Drawer, ListItem, ListItemIcon, ListItemText, MenuList, Toolbar} from "@material-ui/core";
 import {Routes} from "./routes";
 import {Link} from "react-router-dom";
-import InboxIcon from "@material-ui/core/SvgIcon/SvgIcon";
 
 export default class NavBar extends Component {
     constructor(props) {
