@@ -16,10 +16,11 @@ const ReactRotate = keyframes`
     from {
         transform: rotate(360deg);
         opacity: 0;
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(0deg);
-        opacity: 1;
+        margin-left:3%;
+        transform: rotate(360deg);
     }
 `;
 const nodeJSSlide = keyframes`
