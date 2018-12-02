@@ -71,6 +71,9 @@ export default class Footer extends Component {
                                 <FooterSContent>
                                     @jasonyu191
                                 </FooterSContent>
+                                <FooterSContent>
+                                    @brandon_quach
+                                </FooterSContent>
                             </FooterSubCategory>
                         </FooterBoxes>
                         <FooterBoxes>
