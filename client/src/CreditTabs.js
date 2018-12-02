@@ -11,7 +11,7 @@ import Brandon from './assets/brandone.png';
 import Jason from './assets/json.png';
 import Wayne from './assets/wane.png';
 const StyledImg = styled.img`
-    max-height:80%; 
+    max-height:80%;
     max-width:80%;
     object-fit: contain;
     float: left;
@@ -74,8 +74,8 @@ class CreditTabs extends React.Component {
             <StyledImg src ={Buowen}></StyledImg>
           <Content>
             <Header>Name:</Header>Buowen Cao
-            <Header>Responsablities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
-            <Header>References: </Header> <a href = "https://material-ui.com/demos/drawers/">Drawers,</a> <a href ="https://material-ui.com/demos/tabs/"> Tabs</a>       
+            <Header>Responsiblities:</Header> Creating the installation page, creating sidebar for easier navigation, made credits page, designing.
+            <Header>References: </Header> <a href = "https://material-ui.com/demos/drawers/">Drawers,</a> <a href ="https://material-ui.com/demos/tabs/"> Tabs</a>
           </Content>
         </TabContent>
         </TabContainer>}
@@ -84,8 +84,8 @@ class CreditTabs extends React.Component {
             <StyledImg src ={Wayne}></StyledImg>
           <Content>
             <Header>Name:</Header>Wayne Ferrao
-            <Header>Responsablities:</Header> Insert stuff
-            <Header>References: </Header> Stuff       
+            <Header>Responsiblities:</Header> Insert stuff
+            <Header>References: </Header> Stuff
           </Content>
         </TabContent>
         </TabContainer>}
@@ -94,8 +94,8 @@ class CreditTabs extends React.Component {
             <StyledImg src = {Brandon}></StyledImg>
           <Content>
             <Header>Name:</Header>Brandon Quach
-            <Header>Responsablities:</Header> Stuff
-            <Header>References: </Header> Stuff
+            <Header>Responsiblities:</Header>stuff
+            <Header>References: </Header>stuff
           </Content>
         </TabContent>
         </TabContainer>}
@@ -104,8 +104,8 @@ class CreditTabs extends React.Component {
             <StyledImg src = {Jason}></StyledImg>
           <Content>
             <Header>Name:</Header>Jason Yu
-            <Header>Responsablities:</Header> Stuff
-            <Header>References: </Header> Stuff 
+            <Header>Responsiblities:</Header> Demo page, tutorial, conclusion
+            <Header>References: </Header> <a href="https://material-ui.com/demos/cards/">Cards</a>
           </Content>
         </TabContent>
         </TabContainer>}
