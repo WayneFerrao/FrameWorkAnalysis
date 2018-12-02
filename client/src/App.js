@@ -15,11 +15,11 @@ import styled, {keyframes} from 'styled-components';
 const ReactRotate = keyframes` 
     from {
         opacity: 0;
-        margin-left: -0%;
+        transform: rotate(0deg);
     }
     to {
         margin-left:3%;
-        opacity: 1;
+        transform: rotate(360deg);
     }
 `;
 const nodeJSSlide = keyframes` 
