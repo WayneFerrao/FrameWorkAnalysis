@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import reactImg from './assets/reactImg.png';
 import nodeJsImg from './assets/nodejs.png';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import PageTutorial from "./PageTutorial";
