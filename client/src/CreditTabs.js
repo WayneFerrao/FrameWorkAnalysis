@@ -63,7 +63,6 @@ class CreditTabs extends React.Component {
     render() {
         const {classes} = this.props;
         const {value} = this.state;
-
         return (
             <div className={classes.root}>
                 <AppBar position="static">
