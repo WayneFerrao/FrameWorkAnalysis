@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 const StyledA = styled.a`
     text-decoration: none;
-    color:#5b73b4;
+    color:white;
     :hover{
         text-decoration: underline;
-        color:#003d6b;
+        color:black;
     }
 `
 function Navigation(props) {

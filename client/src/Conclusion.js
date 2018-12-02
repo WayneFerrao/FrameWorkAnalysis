@@ -5,18 +5,18 @@ import styled from 'styled-components';
 const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
-    color: #7997d6;
-    font-family: Roboto;
+    color: #424242;
+    font-family: 'Roboto';
 `
 const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
-    color: #5b73b4;
+    color: black;
     font-size: 40px;
-    font-family: Roboto;
+    font-family: 'Roboto';
 `
 const Content = styled.p`
-    font-family: Roboto;
+    font-family: 'Roboto';
 `
 const PageContent = styled.div`
     padding: 6% 19% 2%;
