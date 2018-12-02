@@ -29,10 +29,10 @@ export default class Card1 extends Component {
         <CardActionArea>
           <CardMedia style={{objectFit: "cover"}}
             component="img"
-            alt="Boku no Hero Academia"
+            alt={this.props.CardData.alt}
             height="180"
             image={this.props.CardData.image}
-            title="Boku no Hero Academia"
+            title={this.props.CardData.title}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">

@@ -12,9 +12,11 @@ export default class Credits extends Component {
         return (
             <div>
                 <NavBar/>
-                <PageContent>
-                    <CreditTabs/>
-                </PageContent>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                This was made by Wayne, Brandon, Gary and Jason.
                 <Footer/>
             </div>
         )

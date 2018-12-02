@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import NavBar from "./NavBar";
 import TableContents from "./TableContents";
 import Footer from "./Footer";
-import Navigation from "./Navigation";
+
 const CodeBlock = styled.section`
   padding: 2em;
   background: #C0C0C0;
@@ -34,14 +34,14 @@ export default class FWInstallation extends Component {
         return (
             <div>
                 <NavBar/>
-                <PageContent>
-                    <MainHeader id = "react">
+                <div style={{padding: '6% 19% 2%'}}>
+                    <StyledH1 id="react">
                         React Installation
-                    </MainHeader>
-                    <SubHeader id="requirements">
+                    </StyledH1>
+                    <StyledH2 id="requirements">
                         Requirements
-                    </SubHeader>
-                    <Content>
+                    </StyledH2>
+                    <StyledP>
                         Before installing ReactJS you must ensure that both
                         Node.js and NPM have been properly installed on your device. You can check this
                         by using the commands below i command prompt or terminal:
@@ -58,18 +58,18 @@ export default class FWInstallation extends Component {
                         If it is properly
                         installed it should output the version number
                         <br></br>
-                    </Content>
-                    <SubHeader id="node">
+                    </StyledP>
+                    <StyledH2 id="node">
                         Install Node.js and NPM
                     </SubHeader>
                     <Content>
                         If you do not have these programs on your device here are the links to the downloads for
                         <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
                         href="https://www.npmjs.com/get-npm">NPM </a>
-                    </Content>
-                    <SubHeader id="install">
+                    </StyledP>
+                    <StyledH2 id="install">
                         Installing React
-                    </SubHeader>
+                    </StyledH2>
                     <p>
                         Once you have ensured that you have NodeJs and NPM you will next install using:
                         <br></br>
@@ -78,11 +78,11 @@ export default class FWInstallation extends Component {
                             npm install -g create-react-app
                         </CodeBlock>
                         <br></br>
-                    </p>  
-                    <SubHeader id = "check">
-                        Creating your First React Application
-                    </SubHeader>
-                    <Content>
+                    </p>
+                    <StyledH2 id="check">
+                        Creating your First React application
+                    </StyledH2>
+                    <StyledP>
                         If you have correctly installed the React you will now be able to create your first
                         application. In your command prompt or terminal, navigate to the file that you want your
                         application to be held in and enter:
@@ -101,20 +101,26 @@ export default class FWInstallation extends Component {
                         </CodeBlock>
                         <br></br>
                         it should show open the default react application in your browser.
-                    </Content>
-                    <MainHeader id="backend">
+                    </StyledP>
+                    <StyledH1 id="backend">
                         Backend Installation
                     </MainHeader>
                 </PageContent>
                 <div>
-                <TableContents>    
-                <br></br><Navigation link = "#react" text = "React Installation"/> <br></br>
-                <br></br><Navigation link = "#requirements" text = "Requirements"/> <br></br>
-                <br></br><Navigation link = "#node" text = "Install Node.js and NPM"/> <br></br>
-                <br></br><Navigation link = "#install" text = "Installing React"/> <br></br>
-                <br></br><Navigation link = "#check" text = "Creating your First React Application"/> <br></br>
-                <br></br><Navigation link = "#backend" text = "Backend Installation"/> <br></br>
-                </TableContents>
+                    <TableContents>
+                        <br></br><a href="#react" style={{textDecoration: "none", color: "#003d6b"}}>React
+                        Installation</a> <br></br>
+                        <br></br><a href="#requirements"
+                                    style={{textDecoration: "none", color: "#003d6b"}}>Requirements</a> <br></br>
+                        <br></br><a href="#node" style={{textDecoration: "none", color: "#003d6b"}}>Install Node.js and
+                        NPM</a> <br></br>
+                        <br></br><a href="#install" style={{textDecoration: "none", color: "#003d6b"}}>Installing
+                        React</a> <br></br>
+                        <br></br><a href="#check" style={{textDecoration: "none", color: "#003d6b"}}>Creating your First
+                        React application</a> <br></br>
+                        <br></br><a href="#backend" style={{textDecoration: "none", color: "#003d6b"}}>Backend
+                        Installation</a>
+                    </TableContents>
                 </div>
                 <Footer/>
             </div>
