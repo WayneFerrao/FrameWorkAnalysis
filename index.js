@@ -10,11 +10,11 @@ if (process.env.NODE_ENV === 'production') {
 
     // Express serve up index.html file if it doesn't recognize route
     const path = require('path');
-    app.get('/', (req, res) => {
+    app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 
-    app.get('/api/customers', (req, res)=> {
+    app.get('/DemoPage', (req, res)=> {
         const CardData = [
             {
                 image:"https://media.giphy.com/media/xUA7bdmmuDruZ7f86k/giphy.gif",
