@@ -12,6 +12,29 @@ const styles = {
     margin: 25
 }
 
+const StyledH2 = styled.h2`
+    padding-top: 10%;
+    margin-top: -10%;
+    color: #7997d6;
+    font-weight: 400;
+    font-family: 'Roboto';
+`;
+const Title = styled.h1`
+    padding-top: 10%;
+    margin-top: -10%;
+    color: #5b73b4;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Roboto;
+`;
+const StyledP = styled.p`
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    margin-top: -1%;
+
+`;
+
 export default class Demo extends Component {
     constructor(props) {
         super(props);
@@ -33,6 +56,10 @@ export default class Demo extends Component {
                 <br/>
                 <br/>
                 <br/>
+                <br/>
+                <Grid container justify="center" align Items="center">
+                    <Title>Demo Page</Title>
+                </Grid>
                 <Grid container justify="center" alignItems="center">
                     <Avatar
                         style={styles}
@@ -51,13 +78,26 @@ export default class Demo extends Component {
                         src="https://thumbs.gfycat.com/HighlevelEarnestGander-max-1mb.gif"
                     />
                 </Grid>
+                <Grid container justify="center" align Items="center">
+                    <StyledH2>Top 6 Animes</StyledH2>
+                </Grid>
+                <Grid container justify="center" align Items="center">
+                    <div style={{padding: '0% 12% 0%'}}>
+                        <StyledP>
+                            These are the undisputed top  animes of all time. We have discussed for countless minutes
+                            over which anime belong on this prestigious list and have eliminated
+                            over 5000 other animes that were on our list. We have narrowed them down to the following
+                            animes with a perfect score of 5/7:
+                        </StyledP>
+                    </div>
+                </Grid>
                 <hr/>
                 <Grid container spacing={8} style={{minHeight: '70vh'}} justify="center" alignItems="center">
                     {this.state.animeData.map((anime, key) => {
                             if (key < 3) {
                                 return (
                                     <Grid item md={3}>
-                                        <Card1 CardData = {anime}/>
+                                        <Card1 CardData={anime}/>
                                     </Grid>
                                 )
                             }
@@ -66,10 +106,10 @@ export default class Demo extends Component {
                 </Grid>
                 <Grid container spacing={8} style={{minHeight: '70vh'}} justify="center" alignItems="center">
                     {this.state.animeData.map((anime, key) => {
-                            if (key > 2 ) {
+                            if (key > 2) {
                                 return (
                                     <Grid item md={3}>
-                                        <Card1 CardData = {anime}/>
+                                        <Card1 CardData={anime}/>
                                     </Grid>
                                 )
                             }
