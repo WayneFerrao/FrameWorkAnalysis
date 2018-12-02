@@ -12,7 +12,7 @@ import Credits from "./Credits";
 import styled, {keyframes} from 'styled-components';
 
 
-const ReactRotate = keyframes` 
+const ReactRotate = keyframes`
     from {
         transform: rotate(360deg);
         opacity: 0;
@@ -22,13 +22,14 @@ const ReactRotate = keyframes`
         opacity: 1;
     }
 `;
-const nodeJSSlide = keyframes` 
+const nodeJSSlide = keyframes`
    from {
         transform: rotate(0deg);
         opacity: 0;
+        margin-left: -0%;
     }
     to {
-        transform: rotate(360deg);
+        margin-left:3%;
         opacity: 1;
     }
 `;
@@ -43,7 +44,7 @@ const nodeQAnim = keyframes`
         margin-top: 5%;
         opacity: 1;
     }
-    
+
 `;
 const reactQAnim = keyframes`
     0% {
@@ -56,7 +57,7 @@ const reactQAnim = keyframes`
         opacity: 1;
         font-size: 3.1vw;
     }
-    
+
 `;
 const ReactImage = styled.img`
     width: 45%;
@@ -77,7 +78,7 @@ const Banner = styled.div`
     width: 100%;
     height: 28vh;
     background-color: #202020;
-    
+
 `;
 const ReactHypeQuote = styled.h1`
     color: 	#60DBFB;
@@ -105,7 +106,7 @@ const Container = styled.div`
 `;
 const ImgContainer = styled.div`
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 `;
 const FWContentContainer = styled.div`
     display: flex;
@@ -186,5 +187,3 @@ export default class App extends Component {
         );
     }
 }
-
-

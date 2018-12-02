@@ -10,21 +10,24 @@ const CodeBlock = styled.section`
   border-radius: 7px;
 `;
 //anchors werent working properly cause of appbar and im too low iq to think of a good solution
-const StyledH2 = styled.h2`
+const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
     color: #7997d6;
     font-family: Roboto;
 `
-const StyledH1 = styled.h1`
+const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
     color: #5b73b4;
     font-size: 40px;
     font-family: Roboto;
 `
-const StyledP = styled.p`
+const Content = styled.p`
     font-family: Roboto;
+`
+const PageContent = styled.div`
+    padding: 6% 19% 2%;
 `
 export default class FWInstallation extends Component {
     render() {
@@ -58,8 +61,8 @@ export default class FWInstallation extends Component {
                     </StyledP>
                     <StyledH2 id="node">
                         Install Node.js and NPM
-                    </StyledH2>
-                    <StyledP>
+                    </SubHeader>
+                    <Content>
                         If you do not have these programs on your device here are the links to the downloads for
                         <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
                         href="https://www.npmjs.com/get-npm">NPM </a>
@@ -81,7 +84,7 @@ export default class FWInstallation extends Component {
                     </StyledH2>
                     <StyledP>
                         If you have correctly installed the React you will now be able to create your first
-                        application. In your command prompt or terminal navigate to the file that you want your
+                        application. In your command prompt or terminal, navigate to the file that you want your
                         application to be held in and enter:
                         <br></br>
                         <br></br>
@@ -89,8 +92,8 @@ export default class FWInstallation extends Component {
                             npm create-react-app
                         </CodeBlock>
                         <br></br>
-                        You will then have to wait possibly a couple minutes before it finishes loading
-                        enter:
+                        You will then have to wait possibly a couple minutes before it finishes loading. Once
+                        it has finished enter:
                         <br></br>
                         <br></br>
                         <CodeBlock>
@@ -101,8 +104,8 @@ export default class FWInstallation extends Component {
                     </StyledP>
                     <StyledH1 id="backend">
                         Backend Installation
-                    </StyledH1>
-                </div>
+                    </MainHeader>
+                </PageContent>
                 <div>
                     <TableContents>
                         <br></br><a href="#react" style={{textDecoration: "none", color: "#003d6b"}}>React

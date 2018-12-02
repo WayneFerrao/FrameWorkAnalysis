@@ -20,13 +20,13 @@ const styles = theme => ({
     display: 'flex',
   },
   drawer: {
-    width: "10%",
+    width: "17%",
     flexShrink: 0,
     zIndex: 0,
 
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: "17%",
   },
   toolbar: theme.mixins.toolbar,
 });
