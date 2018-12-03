@@ -46,7 +46,45 @@ export default class Card1 extends Component {
                 </CardActions>
             </Card>
 
-        );
-    }
+
+
+  render(){
+      //const { classes } = props;
+    return(
+      <Card style={{maxWidth:320}}>
+        <CardActionArea>
+          <CardMedia style={{objectFit: "cover"}}
+            component="img"
+            alt={this.props.CardData.alt}
+            height="180"
+            image={this.props.CardData.image}
+            title={this.props.CardData.title}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+            {this.props.CardData.title}
+            </Typography>
+            <Typography component="p">
+            {this.props.CardData.description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <a href={this.props.CardData.showlink}>
+            <Button variant="contained" color="primary" size="large">
+              Watch Now
+            </Button>
+          </a>
+          <a href={this.props.CardData.learnlink}>
+            <Button variant="contained" color="primary" size="large">
+              Learn More
+            </Button>
+          </a>
+        </CardActions>
+      </Card>
+
+    );
+  }
+
 }
 
