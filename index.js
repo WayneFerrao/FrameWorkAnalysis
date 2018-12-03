@@ -54,6 +54,7 @@ const CardData = [
 app.get('/confirm', (req, res) => {
     res.json(CardData);
 });
+
 if (process.env.NODE_ENV === 'production') {
     // Express will serve up production assets
     app.use(express.static('client/build'));

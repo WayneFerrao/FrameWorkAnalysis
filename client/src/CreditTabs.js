@@ -79,7 +79,7 @@ class CreditTabs extends React.Component {
         const {value} = this.state;
         return (
             <div className={classes.root}>
-              <MainHeader> Credits </MainHeader>
+                <MainHeader> Credits </MainHeader>
                 <AppBar position="static" style={{background: "#424242"}}>
                     <Tabs value={value} onChange={this.handleChange} centered>
                         <Tab label="Buowen Cao"/>
@@ -95,13 +95,13 @@ class CreditTabs extends React.Component {
                             <Header>Student Number:</Header>500833495
                             <Header>Responsibilities:</Header>
                             Created TableContents and Navigation component to search for content on a page
-                            based on it's heading.<br/> Design of installation, tutorial, conclusion and credits page using
+                            based on it's heading.<br/> Design of installation, tutorial, conclusion and credits page
+                            using
                             Styled Components. <br/>Wrote content for Frontend portion of the Installation page.
                             <Header>References: </Header>
                             <Reference>
-                                https://material-ui.com/demos/drawers/,
-                            </Reference>
-                            <Reference>
+                                https://material-ui.com/demos/drawers/
+                                <br/>
                                 https://material-ui.com/demos/tabs/
                             </Reference>
                         </Content>
@@ -113,19 +113,17 @@ class CreditTabs extends React.Component {
                         <Content>
                             <Header>Student Number:</Header>5008112288
                             <Header>Responsibilities:</Header>
-                            Installed, configured and linked the NodeJS server with the front end React server.<br/> Created
-                            & implemented the React Router routes, Express route handlers and the navigation bar. <br/>Designed
-                            and coded the appearance and functionality of the Home page and Footer.<br/>Contributed to the design
-                            of the Demo page and the back-end instructions on the installation page.
+                            Installed, configured and linked the NodeJS server with the front end React server. <br/>Created
+                            & implemented the React Router routes, Express route handlers and the navigation bar. <br/>Researched,
+                            designed
+                            and coded the appearance and functionality of the Home page and Footer.<br/>Contributed to
+                            the design
+                            of the Demo page and the back-end instructions on the Installation and Tutorial pages.
                             <Header>References: </Header>
                             <Reference>
-                                https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-reactjs-and-react-native/
-                            </Reference>
-                            <Reference>
-                                https://www.netguru.co/blog/pros-cons-use-node.js-backend
-                            </Reference>
-                            <Reference>
-                                https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png
+                                https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-reactjs-and-react-native/<br/>
+                                https://www.netguru.co/blog/pros-cons-use-node.js-backend<br/>
+                                https://material-ui.com/demos/drawers/<br/>
                             </Reference>
 
                         </Content>
@@ -137,13 +135,13 @@ class CreditTabs extends React.Component {
                         <Content>
                             <Header>Student Number:</Header>500834440
                             <Header>Responsibilities:</Header>
-                              Created Avatars and helped format the Demo Page. <br/>
-                              Cowrote and formatted the Tutorials page.<br/>
-                              Cowrote and formatted the Conclusions page.<br/>
+                            Created Avatars and helped format the Demo Page. <br/>
+                            Contributed to and formatted the Tutorials page.<br/>
+                            Contributed to and formatted the Conclusions page.<br/>
                             <Header>References:</Header>
                             <Reference>
-                                https://material-ui.com/demos/avatars/<br/> <br/>
-                                https://material-ui.com/api/avatar/ <br/> <br/>
+                                https://material-ui.com/demos/avatars/<br/>
+                                https://material-ui.com/api/avatar/ <br/>
                                 https://material-ui.com/layout/grid/
                             </Reference>
                         </Content>
@@ -154,15 +152,15 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Jason}/>
                         <Content>
 
-                            <Header>Name:</Header>Jason Yu
-                            <Header>Responsiblities:</Header> Created the cards and contributed to the design of Demo page.
-                                                              <br/>
-                                                              Contributed to the design and content of the Demo tutorial and Conclusion.
+                            <Header>Student Number:</Header>500828987
+                            <Header>Responsiblities:</Header> Created the cards and contributed to the design of Demo
+                            page.
+                            <br/>
+                            Contributed to the design and content of the Demo tutorial and Conclusion.
                             <Header>References: </Header> <Reference>
-                          https://material-ui.com/demos/cards/
-                          <br/>
-                          <br/>
-                          https://material-ui.com/layout/grid/
+                            https://material-ui.com/demos/cards/
+                            <br/>
+                            https://material-ui.com/layout/grid/
 
                         </Reference>
                         </Content>
