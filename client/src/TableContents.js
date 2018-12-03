@@ -12,6 +12,7 @@ const Wrapper = styled.section`
   padding: 10% 20% 10%;
   background: #888888;
   height: 100%;
+  
 `;
 const styles = theme => ({
   root: {
