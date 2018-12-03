@@ -72,9 +72,9 @@ if (process.env.NODE_ENV === 'production') {
         // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 
-    app.get('/confirm', (req, res) => {
-        res.json(CardData);
-    });
+    // app.get('/confirm', (req, res) => {
+    //     res.json(CardData);
+    // });
 }
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
