@@ -4,14 +4,15 @@ import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar"
 import Footer from './Footer';
 import styled from 'styled-components';
+
 import Card1 from './Card1'
+
 
 const styles = {
     width: 200,
     height: 200,
     margin: 25
 }
-
 const StyledH2 = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
@@ -20,6 +21,7 @@ const StyledH2 = styled.h2`
     font-family: 'Roboto';
 `;
 const Title = styled.h1`
+
     padding-top: 10%;
     margin-top: -10%;
     color: #5b73b4;
@@ -44,9 +46,7 @@ export default class Demo extends Component {
     }
 
     componentDidMount() {
-        fetch('/api/customers')
-            .then(res => res.json())
-            .then(animeData => this.setState({animeData}));
+        fetch('/DemoPage').then(res => res.json()).then(animeData => this.setState({animeData}));
     }
 
     render() {
@@ -61,6 +61,7 @@ export default class Demo extends Component {
                     <Title>Demo Page</Title>
                 </Grid>
                 <Grid container justify="center" alignItems="center">
+
                     <Avatar
                         style={styles}
                         src="https://media.giphy.com/media/EW88XznThDJJK/giphy.gif"
@@ -115,6 +116,7 @@ export default class Demo extends Component {
                             }
                         }
                     )}
+
                 </Grid>
                 <Footer/>
             </div>
