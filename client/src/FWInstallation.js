@@ -90,11 +90,11 @@ export default class FWInstallation extends Component {
                     <ContentDiv>
                         If you have correctly installed the React you will now be able to create your first
                         application. In your command prompt or terminal, navigate to the file that you want your
-                        application to be held in and enter:
+                        application to be held in, decide on your folder name and enter:
                         <br></br>
                         <br></br>
                         <CodeBlock>
-                            npm create-react-app
+                            npm create-react-app FolderName
                         </CodeBlock>
                         <br></br>
                         You will then have to wait possibly a couple minutes before it finishes loading. Once
@@ -118,7 +118,7 @@ export default class FWInstallation extends Component {
                 <br></br><Navigation link = "#node" text = "Install Node.js and NPM"/> <br></br>
                 <br></br><Navigation link = "#install" text = "Installing React"/> <br></br>
                 <br></br><Navigation link = "#check" text = "Creating your First React Application"/> <br></br>
-                <br></br><Navigation link = "#backend" text = "Backend Installation"/> <br></br>
+                <br></br><Navigation link = "#backend" text = "NodeJS Installation"/> <br></br>
                 </TableContents>
                 </div>
                 <Footer/>
