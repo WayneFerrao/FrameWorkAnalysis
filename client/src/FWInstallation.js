@@ -6,28 +6,33 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 const CodeBlock = styled.section`
   padding: 2em;
-  background: #C0C0C0;
+  background: #000000;
+  color:lime;
   border-radius: 7px;
 `;
 //anchors werent working properly cause of appbar and im too low iq to think of a good solution
 const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
-    color: #7997d6;
-    font-family: Roboto;
+    color: #424242;
+    font-family: 'Roboto';
+    font-weight: 500;
 `
 const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
-    color: #5b73b4;
-    font-size: 40px;
-    font-family: Roboto;
+    color: black;
+    font-size: 3em;
+    font-family: 'Roboto';
+    font-weight: 700;
 `
-const Content = styled.p`
-    font-family: Roboto;
+const ContentDiv = styled.p`
+    font-family: 'Roboto';
 `
 const PageContent = styled.div`
-    padding: 6% 19% 2%;
+    padding-left: 3%;
+    padding-top: 6%;
+    padding-right: 19% ;
 `
 export default class FWInstallation extends Component {
     render() {
@@ -41,7 +46,7 @@ export default class FWInstallation extends Component {
                     <SubHeader id="requirements">
                         Requirements
                     </SubHeader>
-                    <Content>
+                    <ContentDiv>
                         Before installing ReactJS you must ensure that both
                         Node.js and NPM have been properly installed on your device. You can check this
                         by using the commands below i command prompt or terminal:
@@ -58,15 +63,15 @@ export default class FWInstallation extends Component {
                         If it is properly
                         installed it should output the version number
                         <br></br>
-                    </Content>
+                    </ContentDiv>
                     <SubHeader id="node">
                         Install Node.js and NPM
                     </SubHeader>
-                    <Content>
-                        If you do not have these programs on your device here are the links to the downloads for
+                    <ContentDiv>
+                        If you do not have these programs on your device, here are the links to the downloads for
                         <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
                         href="https://www.npmjs.com/get-npm">NPM </a>
-                    </Content>
+                    </ContentDiv>
                     <SubHeader id="install">
                         Installing React
                     </SubHeader>
@@ -82,7 +87,7 @@ export default class FWInstallation extends Component {
                     <SubHeader id = "check">
                         Creating your First React Application
                     </SubHeader>
-                    <Content>
+                    <ContentDiv>
                         If you have correctly installed the React you will now be able to create your first
                         application. In your command prompt or terminal, navigate to the file that you want your
                         application to be held in and enter:
@@ -101,9 +106,9 @@ export default class FWInstallation extends Component {
                         </CodeBlock>
                         <br></br>
                         it should show open the default react application in your browser.
-                    </Content>
+                    </ContentDiv>
                     <MainHeader id="backend">
-                        Backend Installation
+                        NodeJS Installation
                     </MainHeader>
                 </PageContent>
                 <div>

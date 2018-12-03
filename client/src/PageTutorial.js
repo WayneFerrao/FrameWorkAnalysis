@@ -15,18 +15,18 @@ const Background = styled.div`
 const SubHeader = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
-    color: #7997d6;
-    font-family: Roboto;
+    color: #424242;
+    font-family: 'Roboto';
 `
 const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
-    color: #5b73b4;
-    font-size: 40px;
-    font-family: Roboto;
+    color: black;
+    font-size: 3em;
+    font-family: 'Roboto';
 `
 const Content = styled.p`
-    font-family: Roboto;
+    font-family: 'Roboto';
 `
 export default class PageTutorial extends Component {
     render() {
