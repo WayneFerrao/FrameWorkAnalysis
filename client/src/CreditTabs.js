@@ -153,10 +153,17 @@ class CreditTabs extends React.Component {
                     <TabContent>
                         <StyledImg src={Jason}/>
                         <Content>
-                            <Header>Student Number:</Header>500828987
-                            <Header>Responsiblities:</Header> Demo page, tutorial, conclusion
-                            <Header>References: </Header> <Reference><a
-                            href="https://material-ui.com/demos/cards/">Cards</a>
+
+                            <Header>Name:</Header>Jason Yu
+                            <Header>Responsiblities:</Header> Created the cards and contributed to the design of Demo page.
+                                                              <br/>
+                                                              Contributed to the design and content of the Demo tutorial and Conclusion.
+                            <Header>References: </Header> <Reference>
+                          https://material-ui.com/demos/cards/
+                          <br/>
+                          <br/>
+                          https://material-ui.com/layout/grid/
+
                         </Reference>
                         </Content>
                     </TabContent>
