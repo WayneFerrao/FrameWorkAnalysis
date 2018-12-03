@@ -42,7 +42,7 @@ export default class FWInstallation extends Component {
                 <NavBar/>
                 <PageContent>
                     <br/>
-                    <MainHeader id="backend">
+                    <MainHeader id="start">
                         Get Started
                     </MainHeader>
                     <SubHeader id="requirements">
@@ -148,7 +148,6 @@ export default class FWInstallation extends Component {
                         <br></br>
                         <CodeBlock>
                             create-react-app client
-
                         </CodeBlock>
                         <br></br>
                         You will then have to wait a couple minutes while all the packages get installed. Once
@@ -168,19 +167,17 @@ export default class FWInstallation extends Component {
                 </PageContent>
                 <div>
                     <TableContents>
-                        <br></br><Navigation link="#react" text="React Installation"/> <br></br>
+                        <br></br><Navigation link="#start" text="Get Started"/> <br></br>
                         <br></br><Navigation link="#requirements" text="Requirements"/> <br></br>
                         <br></br><Navigation link="#node" text="Install Node.js and NPM"/> <br></br>
+                        <br></br><Navigation link="#backend" text="NodeJS Installation"/> <br></br>
+                        <br></br><Navigation link="#react" text="React Installation"/> <br></br>
                         <br></br><Navigation link="#install" text="Installing React"/> <br></br>
                         <br></br><Navigation link="#check" text="Creating your First React Application"/> <br></br>
-                        <br></br><Navigation link="#backend" text="Backend Installation"/> <br></br>
                     </TableContents>
-
                 </div>
                 <Footer/>
             </div>
-
         )
     }
-
 }
