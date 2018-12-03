@@ -138,7 +138,9 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Jason}></StyledImg>
                         <Content>
                             <Header>Name:</Header>Jason Yu
-                            <Header>Responsiblities:</Header> Contributed to demo, tutorial, and conclusion pages.
+                            <Header>Responsiblities:</Header> Created the cards and contributed to the design of Demo page.
+                                                              <br/>
+                                                              Contributed to the design and content of the Demo tutorial and Conclusion.
                             <Header>References: </Header> <Reference>
                           https://material-ui.com/demos/cards/
                           <br/>
