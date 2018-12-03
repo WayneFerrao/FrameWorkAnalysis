@@ -30,8 +30,9 @@ const MainHeader = styled.h1`
     padding-top: 5%;
     margin-top: -8%;
     color: black;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Roboto';
+    font-weight: 700;
 `
 const Content = styled.p`
     font-family: 'Roboto';
@@ -95,7 +96,7 @@ class CreditTabs extends React.Component {
                             <Header>Responsibilities:</Header>
                             Created TableContents and Navigation component to search for content on a page
                             based on it's heading.<br/> Design of installation, tutorial, conclusion and credits page using
-                            Styled Components. <br/>Wrote content for Frontend portion of the installation page.
+                            Styled Components. <br/>Wrote content for Frontend portion of the Installation page.
                             <Header>References: </Header>
                             <Reference>
                                 https://material-ui.com/demos/drawers/,

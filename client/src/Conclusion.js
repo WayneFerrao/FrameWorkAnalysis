@@ -19,6 +19,11 @@ const MainHeader = styled.h1`
     font-family: 'Roboto';
     font-weight: 700;
 `
+const FrameworkName = styled.h2`
+    color: #424242;
+    font-family: 'Roboto';
+    font-weight: 500;
+`;
 const Content = styled.p`
     font-family: 'Roboto';
 `
@@ -26,31 +31,49 @@ const PageContent = styled.div`
     padding-left: 3%;
     padding-top: 6%;
     padding-right: 19% ;
-`
+`;
+const RatingContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+const NameAndRatingDiv = styled.div`
+    margin-right: 3%;
+`;
+
+const RatingCommentDiv = styled.div`
+`;
 export default class Conclusion extends Component {
     render() {
         return (
             <div>
                 <NavBar/>
                 <PageContent>
-
                     <MainHeader>
-                        Framework Ratings</MainHeader>
-                    <div>
-                        React
-                        <StarRatingComponent
-                            name="FrameworkRating"
-                            value={4}
-                        />
-                    </div>
-                    <div>
-                        NodeJS
-                        <StarRatingComponent
-                            name="FrameworkRating"
-                            value={3}
-                        />
-                    </div>
-                    <Content> The frameworks were alright </Content>
+                        Framework Ratings
+                    </MainHeader>
+                    <RatingContainer>
+                        <NameAndRatingDiv>
+                            <FrameworkName>
+                                React
+                            </FrameworkName>
+                            <StarRatingComponent
+                                name="FrameworkRating"
+                                value={4}
+                            />
+                        </NameAndRatingDiv>
+                        <NameAndRatingDiv>
+                            <FrameworkName>
+                                NodeJS
+                            </FrameworkName>
+                            <StarRatingComponent
+                                name="FrameworkRating"
+                                value={3}
+                            />
+                        </NameAndRatingDiv>
+                    </RatingContainer>
+                    <RatingCommentDiv>
+                        <Content> The frameworks were alright </Content>
+                    </RatingCommentDiv>
                     <MainHeader> Expectations and Challenges </MainHeader>
                     <SubHeader>Ease of Use </SubHeader>
                     <Content> Regarding React, the framework was fairly simple to install, but the framework did not
