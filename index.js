@@ -72,7 +72,7 @@ if (process.env.NODE_ENV === 'production') {
         // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 
-    app.get('/DemoPage', (req, res) => {
+    app.get('/confirm', (req, res) => {
         res.json(CardData);
     })
 }
