@@ -12,7 +12,7 @@ import Jason from './assets/json.png';
 import Wayne from './assets/wane.png';
 
 const StyledImg = styled.img`
-    max-height:80%; 
+    max-height:80%;
     max-width:80%;
     object-fit: contain;
     float: left;
@@ -89,7 +89,6 @@ class CreditTabs extends React.Component {
                             based on it's heading. Design of installation, tutorial, conclusion and credits page using
                             Styled Components. Wrote content for Frontend portion of the installation page. 
                             <Header>References: </Header>
-
                             <Reference> 
                               https://material-ui.com/demos/drawers/, 
                             </Reference> 
@@ -140,9 +139,8 @@ class CreditTabs extends React.Component {
                         <Content>
                             <Header>Name:</Header>Jason Yu
                             <Header>Responsibilities:</Header> Stuff
-                            <Header>References: </Header>
-                            <Reference>
-                                Stuff
+                             <Header>Responsiblities:</Header> Demo page, tutorial, conclusion
+                             <Header>References: </Header> <a href="https://material-ui.com/demos/cards/">Cards</a>
                             </Reference>
                         </Content>
                     </TabContent>
@@ -150,6 +148,7 @@ class CreditTabs extends React.Component {
             </div>
         );
     }
+
 }
 
 CreditTabs.propTypes = {
