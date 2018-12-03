@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT);
+
 
 const CardData = [
     {
@@ -52,6 +51,10 @@ const CardData = [
         learnlink:"https://www.crunchyroll.com/anohana-the-flower-we-saw-that-day",
     },
 ];
+
+    app.get('/DemoPage', (req,res) => {
+       res.json(CardData);
+    });
 if (process.env.NODE_ENV === 'production') {
     // Express will serve up production assets
     app.use(express.static('client/build'));
@@ -59,17 +62,9 @@ if (process.env.NODE_ENV === 'production') {
     // Express serve up index.html file if it doesn't recognize route
     const path = require('path');
     app.get('*', (req, res) => {
-        res.json(CardData);
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-
+        res.json(CardData);
     });
-
-    // app.get('/DemoPage', (req, res)=> {
-    //
-    //
-    //
-    //
-    // });
-
-
 }
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);

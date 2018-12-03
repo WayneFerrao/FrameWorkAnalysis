@@ -44,9 +44,7 @@ export default class Demo extends Component {
     }
 
     componentDidMount() {
-        fetch('/DemoPage')
-            .then(res => res.json())
-            .then(animeData => this.setState({animeData}));
+        fetch('/DemoPage').then(res => res.json()).then(animeData => this.setState({animeData}));
     }
 
     render() {
