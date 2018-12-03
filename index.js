@@ -61,7 +61,7 @@ if (process.env.NODE_ENV === 'production') {
 
     // Express serve up index.html file if it doesn't recognize route
     const path = require('path');
-    app.get('*', (req, res) => {
+    app.get('/*', (req, res) => {
 
         Router.run(routes, req.path, function (Handler, state) {
             var element = React.createElement(Handler);
@@ -69,8 +69,8 @@ if (process.env.NODE_ENV === 'production') {
             res.render('main', { content: html });
         });
 
-
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        res.sendFile(path.resolve(__dirname, 'client/build/index.html'));
+        // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
         res.json(CardData);
     });
 }
