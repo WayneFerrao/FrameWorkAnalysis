@@ -12,7 +12,7 @@ import Jason from './assets/json.png';
 import Wayne from './assets/wane.png';
 
 const StyledImg = styled.img`
-    max-height:80%; 
+    max-height:80%;
     max-width:80%;
     object-fit: contain;
     float: left;
@@ -22,7 +22,7 @@ const TabContent = styled.div`
     height: 30em;
 `
 const Header = styled.h2`
-    color: #5b73b4;
+    color: #424242;
     font-family: 'Roboto';
     font-weight: 500;
 `
@@ -71,7 +71,7 @@ class CreditTabs extends React.Component {
         const {value} = this.state;
         return (
             <div className={classes.root}>
-                <AppBar position="static">
+                <AppBar position="static" style = {{ background: "#424242"}}>
                     <Tabs value={value} onChange={this.handleChange} centered>
                         <Tab label="Buowen Cao"/>
                         <Tab label="Wayne Ferrao"/>
@@ -84,12 +84,17 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Buowen}></StyledImg>
                         <Content>
                             <Header>Name:</Header>Buowen Cao
-                            <Header>Responsibilities:</Header> Creating the installation page, creating sidebar for
-                            easier navigation, made credits page, designing.
+                            <Header>Responsibilities:</Header> 
+                            Created TableContents and Navigation component to search for content on a page
+                            based on it's heading. Design of installation, tutorial, conclusion and credits page using
+                            Styled Components. Wrote content for Frontend portion of the installation page. 
                             <Header>References: </Header>
-
-                            <a href="https://material-ui.com/demos/drawers/"><Reference> Drawers, </Reference> </a>
-                            <a href="https://material-ui.com/demos/tabs/"> <Reference> Tabs </Reference> </a>
+                            <Reference> 
+                              https://material-ui.com/demos/drawers/, 
+                            </Reference> 
+                            <Reference> 
+                              https://material-ui.com/demos/tabs/ 
+                            </Reference>
                         </Content>
                     </TabContent>
                 </TabContainer>}
@@ -134,9 +139,8 @@ class CreditTabs extends React.Component {
                         <Content>
                             <Header>Name:</Header>Jason Yu
                             <Header>Responsibilities:</Header> Stuff
-                            <Header>References: </Header>
-                            <Reference>
-                                Stuff
+                             <Header>Responsiblities:</Header> Demo page, tutorial, conclusion
+                             <Header>References: </Header> <a href="https://material-ui.com/demos/cards/">Cards</a>
                             </Reference>
                         </Content>
                     </TabContent>
@@ -144,6 +148,7 @@ class CreditTabs extends React.Component {
             </div>
         );
     }
+
 }
 
 CreditTabs.propTypes = {

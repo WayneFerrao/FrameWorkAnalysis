@@ -1,5 +1,3 @@
-import React from "react";
-
 export const CardData = [
 { image:"https://images-na.ssl-images-amazon.com/images/I/91kjVOEopVL._SY606_.jpg",
   title:"Boku no Hero Academia",
@@ -9,8 +7,6 @@ export const CardData = [
   title:"Boku no Hero Academia",
   alt:"Boku no Hero Academia",
 },
-
-
 {
   image:"https://is1-ssl.mzstatic.com/image/thumb/Video/v4/3f/b9/be/3fb9be38-2bfa-9230-2bbb-45126166c676/source/1200x630bb.jpg",
   title:"Naruto",
