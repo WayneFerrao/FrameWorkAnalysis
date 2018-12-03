@@ -148,6 +148,7 @@ export default class FWInstallation extends Component {
                         <br></br>
                         <CodeBlock>
                             create-react-app client
+
                         </CodeBlock>
                         <br></br>
                         You will then have to wait a couple minutes while all the packages get installed. Once
@@ -174,6 +175,7 @@ export default class FWInstallation extends Component {
                         <br></br><Navigation link="#check" text="Creating your First React Application"/> <br></br>
                         <br></br><Navigation link="#backend" text="Backend Installation"/> <br></br>
                     </TableContents>
+
                 </div>
                 <Footer/>
             </div>
