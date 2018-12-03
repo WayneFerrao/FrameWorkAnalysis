@@ -126,7 +126,7 @@ class CreditTabs extends React.Component {
                         <Content>
                             <Header>Name:</Header>Brandon Quach
                             <Header>Responsibilities:</Header> Stuff
-                            <Header>References: </Header>
+                            <Header>References:</Header>
                             <Reference>
                                 Stuff
                             </Reference>
