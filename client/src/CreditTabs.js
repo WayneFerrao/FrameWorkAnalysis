@@ -26,6 +26,13 @@ const Header = styled.h2`
     font-family: 'Roboto';
     font-weight: 500;
 `
+const MainHeader = styled.h1`
+    padding-top: 5%;
+    margin-top: -10%;
+    color: black;
+    font-size: 3em;
+    font-family: 'Roboto';
+`
 const Content = styled.p`
     font-family: 'Roboto';
     font-weight: 300;
@@ -71,6 +78,7 @@ class CreditTabs extends React.Component {
         const {value} = this.state;
         return (
             <div className={classes.root}>
+              <MainHeader> Credits </MainHeader>
                 <AppBar position="static" style={{background: "#424242"}}>
                     <Tabs value={value} onChange={this.handleChange} centered>
                         <Tab label="Buowen Cao"/>
@@ -127,10 +135,15 @@ class CreditTabs extends React.Component {
                         <StyledImg src={Brandon}></StyledImg>
                         <Content>
                             <Header>Student Number:</Header>500834440
-                            <Header>Responsibilities:</Header> Stuff
+                            <Header>Responsibilities:</Header>
+                              Created Avatars and helped format the Demo Page. <br/>
+                              Cowrote and formatted the Tutorials page.<br/>
+                              Cowrote and formatted the Conclusions page.<br/>
                             <Header>References:</Header>
                             <Reference>
-                                Stuff
+                                https://material-ui.com/demos/avatars/<br/> <br/>
+                                https://material-ui.com/api/avatar/ <br/> <br/>
+                                https://material-ui.com/layout/grid/
                             </Reference>
                         </Content>
                     </TabContent>
