@@ -79,19 +79,44 @@ export default class FWInstallation extends Component {
                         NodeJS Installation
                     </MainHeader>
                     <ContentDiv>
-                        Open up your terminal and start by creating a package.json file. This file will act as the
-                        central
-                        hub of our project. It's used to define the dependencies that the project will need to work.
+                        Open your terminal. Create a folder called myWebApp(or any name) & navigate into an empty
+                        directory. This will hold all your code for this project. We will start by creating a
+                        package.json
+                        file by running the following command. This file will act as the central hub of our project.
+                        It's used to define the dependencies that the project will need to work.
                         <br/><br/>
-
                         <CodeBlock>
                             npm init
                         </CodeBlock>
                         <br/> <br/>
                         You will be prompted with how you want to configure the settings for your new package.json file.
-                        For
-                        the sake of simplicity, we can stick to the default settings, so just keep hitting enter till it
-                        finishes.
+                        For the sake of simplicity, we can stick to the default settings, so just keep hitting enter
+                        till it finishes. The first dependency we need is express so run the following commands.
+                        <br/><br/>
+                        <CodeBlock>
+                            npm install --save express
+                        </CodeBlock>
+                        <br/><br/>
+                        Next create a new file inside myWebApp called index.js. Now open up a code editor and add the
+                        following code to index.js.
+                        <br/><br/>
+                        <CodeBlock>
+                            {`const express = require('express');`}<br/>
+                            {`const app = express();`}<br/>
+                            {`app.get('/', (req, res) => {`}<br/>
+                            &emsp;{`res.send({hello:'world'});`}<br/>
+                            {`}`}<br/>
+                            {`app.listen(5000);`}<br/>
+                        </CodeBlock>
+                        <br/><br/>
+                        Next, ensure you're in the myWebApp directory and run the following command in your terminal.
+                        <br/><br/>
+                        <CodeBlock>
+                            node index.js
+                        </CodeBlock>
+                        <br/><br/>
+                        Now if you open a browser and try navigating to http://localhost:5000! If you want to close the connection,
+                        simply press CTRL + C.
                     </ContentDiv>
                     <MainHeader id="react">
                         React Installation
@@ -101,36 +126,42 @@ export default class FWInstallation extends Component {
                         Installing React
                     </SubHeader>
                     <p>
-                        Once you have ensured that you have NodeJs and NPM you will next install using:
+                        Now that you have your server configured, we can move on to setting up our client server using React.
+                        In a separate terminal tab( we still have the node server running), ensure you are in the
+                        myWebApp directory in your terminal and run the following command.
                         <br></br>
                         <br></br>
                         <CodeBlock>
                             npm install -g create-react-app
                         </CodeBlock>
                         <br></br>
+                        This will download the tool required to generate a new React project.
                     </p>
                     <SubHeader id="check">
                         Creating your First React Application
                     </SubHeader>
                     <ContentDiv>
-                        If you have correctly installed the React you will now be able to create your first
-                        application. In your command prompt or terminal, navigate to the file that you want your
-                        application to be held in and enter:
+                        If you have correctly installed the create-react-app tool, you will now be able to create your first
+                        application. Once again, ensure you're in your myWebApp folder ( folder where we made our server files ).
+                        Now run the following code.
                         <br></br>
                         <br></br>
                         <CodeBlock>
-                            npm create-react-app
+                            create-react-app client
                         </CodeBlock>
                         <br></br>
-                        You will then have to wait possibly a couple minutes before it finishes loading. Once
-                        it has finished enter:
+                        You will then have to wait a couple minutes while all the packages get installed. Once
+                        it has finished, run the following commands.
                         <br></br>
                         <br></br>
                         <CodeBlock>
+                            {`cd client`}<br/>
                             npm start
                         </CodeBlock>
                         <br></br>
-                        it should show open the default react application in your browser.
+                        This should start the React development server and open the default React application in http://localhost:3000.
+                        To edit this front-end, navigate to the /src folder inside client, open a code editor and edit the App.js file.
+                        Once you hit save, your changes can immediately be seen in the browser! Happy coding!
                     </ContentDiv>
 
                 </PageContent>
