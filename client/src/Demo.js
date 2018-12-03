@@ -4,9 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar"
 import Footer from './Footer';
 import styled from 'styled-components';
-
 import Card1 from './Card1'
-
 
 const styles = {
     width: 200,
@@ -21,7 +19,6 @@ const StyledH2 = styled.h2`
     font-family: 'Roboto';
 `;
 const Title = styled.h1`
-
     padding-top: 10%;
     margin-top: -10%;
     color: #5b73b4;
@@ -34,7 +31,6 @@ const StyledP = styled.p`
     font-weight: 300;
     font-family: 'Roboto';
     margin-top: -1%;
-
 `;
 
 export default class Demo extends Component {
@@ -116,11 +112,9 @@ export default class Demo extends Component {
                             }
                         }
                     )}
-
                 </Grid>
                 <Footer/>
             </div>
         )
     }
-
 }

@@ -51,7 +51,7 @@ const CardData = [
     },
 ];
 
-app.get('/DemoPage', (req, res) => {
+app.get('/confirm', (req, res) => {
     res.json(CardData);
 });
 if (process.env.NODE_ENV === 'production') {
@@ -74,7 +74,7 @@ if (process.env.NODE_ENV === 'production') {
 
     app.get('/confirm', (req, res) => {
         res.json(CardData);
-    })
+    });
 }
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
