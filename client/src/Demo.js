@@ -54,7 +54,7 @@ export default class Demo extends Component {
                 <br/>
                 <br/>
                 <Grid container justify="center" align Items="center">
-                    <Title>Demo Page</Title>
+                    <Title>Undisputed Top 6 Animes</Title>
                 </Grid>
                 <Grid container justify="center" alignItems="center">
 
@@ -76,7 +76,6 @@ export default class Demo extends Component {
                     />
                 </Grid>
                 <Grid container justify="center" align Items="center">
-                    <StyledH2>Top 6 Animes</StyledH2>
                 </Grid>
                 <Grid container justify="center" align Items="center">
                     <div style={{padding: '0% 12% 0%'}}>
