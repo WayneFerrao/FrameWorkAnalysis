@@ -11,7 +11,6 @@ const styles = {
     height: 200,
     margin: 25
 }
-
 const StyledH2 = styled.h2`
     padding-top: 10%;
     margin-top: -10%;
@@ -32,7 +31,6 @@ const StyledP = styled.p`
     font-weight: 300;
     font-family: 'Roboto';
     margin-top: -1%;
-
 `;
 
 export default class Demo extends Component {
@@ -44,9 +42,7 @@ export default class Demo extends Component {
     }
 
     componentDidMount() {
-        fetch('/api/customers')
-            .then(res => res.json())
-            .then(animeData => this.setState({animeData}));
+        fetch('/confirm').then(res => res.json()).then(animeData => this.setState({animeData}));
     }
 
     render() {
@@ -61,6 +57,7 @@ export default class Demo extends Component {
                     <Title>Demo Page</Title>
                 </Grid>
                 <Grid container justify="center" alignItems="center">
+
                     <Avatar
                         style={styles}
                         src="https://media.giphy.com/media/EW88XznThDJJK/giphy.gif"
@@ -120,5 +117,4 @@ export default class Demo extends Component {
             </div>
         )
     }
-
 }
