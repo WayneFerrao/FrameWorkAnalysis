@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import TableContents from "./TableContents";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+
 const CodeBlock = styled.section`
   padding: 2em;
   background: #000000;
@@ -40,14 +41,15 @@ export default class FWInstallation extends Component {
             <div>
                 <NavBar/>
                 <PageContent>
-                    <MainHeader id = "react">
-                        React Installation
+                    <br/>
+                    <MainHeader id="backend">
+                        Get Started
                     </MainHeader>
                     <SubHeader id="requirements">
                         Requirements
                     </SubHeader>
                     <ContentDiv>
-                        Before installing ReactJS you must ensure that both
+                        Before installing NodeJS or ReactJS, you must ensure that both
                         Node.js and NPM have been properly installed on your device. You can check this
                         by using the commands below i command prompt or terminal:
                         <br></br>
@@ -63,15 +65,38 @@ export default class FWInstallation extends Component {
                         If it is properly
                         installed it should output the version number
                         <br></br>
+                        <br/>
+                        <SubHeader id="node">
+                            Install Node.js and NPM
+                        </SubHeader>
+                        <ContentDiv>
+                            If you do not have these programs on your device, here are the links to the downloads for
+                            <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
+                            href="https://www.npmjs.com/get-npm">NPM </a>
+                        </ContentDiv>
                     </ContentDiv>
-                    <SubHeader id="node">
-                        Install Node.js and NPM
-                    </SubHeader>
+                    <MainHeader id="backend">
+                        NodeJS Installation
+                    </MainHeader>
                     <ContentDiv>
-                        If you do not have these programs on your device, here are the links to the downloads for
-                        <a href="https://nodejs.org/en/download/"> Node.js</a> and <a
-                        href="https://www.npmjs.com/get-npm">NPM </a>
+                        Open up your terminal and start by creating a package.json file. This file will act as the
+                        central
+                        hub of our project. It's used to define the dependencies that the project will need to work.
+                        <br/><br/>
+
+                        <CodeBlock>
+                            npm init
+                        </CodeBlock>
+                        <br/> <br/>
+                        You will be prompted with how you want to configure the settings for your new package.json file.
+                        For
+                        the sake of simplicity, we can stick to the default settings, so just keep hitting enter till it
+                        finishes.
                     </ContentDiv>
+                    <MainHeader id="react">
+                        React Installation
+                    </MainHeader>
+
                     <SubHeader id="install">
                         Installing React
                     </SubHeader>
@@ -83,8 +108,8 @@ export default class FWInstallation extends Component {
                             npm install -g create-react-app
                         </CodeBlock>
                         <br></br>
-                    </p>  
-                    <SubHeader id = "check">
+                    </p>
+                    <SubHeader id="check">
                         Creating your First React Application
                     </SubHeader>
                     <ContentDiv>
@@ -107,19 +132,17 @@ export default class FWInstallation extends Component {
                         <br></br>
                         it should show open the default react application in your browser.
                     </ContentDiv>
-                    <MainHeader id="backend">
-                        NodeJS Installation
-                    </MainHeader>
+
                 </PageContent>
                 <div>
-                <TableContents>    
-                <br></br><Navigation link = "#react" text = "React Installation"/> <br></br>
-                <br></br><Navigation link = "#requirements" text = "Requirements"/> <br></br>
-                <br></br><Navigation link = "#node" text = "Install Node.js and NPM"/> <br></br>
-                <br></br><Navigation link = "#install" text = "Installing React"/> <br></br>
-                <br></br><Navigation link = "#check" text = "Creating your First React Application"/> <br></br>
-                <br></br><Navigation link = "#backend" text = "Backend Installation"/> <br></br>
-                </TableContents>
+                    <TableContents>
+                        <br></br><Navigation link="#react" text="React Installation"/> <br></br>
+                        <br></br><Navigation link="#requirements" text="Requirements"/> <br></br>
+                        <br></br><Navigation link="#node" text="Install Node.js and NPM"/> <br></br>
+                        <br></br><Navigation link="#install" text="Installing React"/> <br></br>
+                        <br></br><Navigation link="#check" text="Creating your First React Application"/> <br></br>
+                        <br></br><Navigation link="#backend" text="Backend Installation"/> <br></br>
+                    </TableContents>
                 </div>
                 <Footer/>
             </div>
