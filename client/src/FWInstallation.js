@@ -178,8 +178,6 @@ export default class FWInstallation extends Component {
                 </div>
                 <Footer/>
             </div>
-
         )
     }
-
 }
