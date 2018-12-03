@@ -66,11 +66,13 @@ export default class Footer extends Component {
                             </FooterSTitle>
                             <FooterSubCategory>
                                 <FooterSContent>
-                                    <FooterLink href="https://reactjs.org/">React Docs</FooterLink>
+                                    <FooterLink href="https://reactjs.org/">
+                                        React
+                                    </FooterLink>
                                 </FooterSContent>
                                 <FooterSContent>
                                     <FooterLink href="https://nodejs.org/en/">
-                                        NodeJS Docs
+                                        NodeJS
                                     </FooterLink>
                                 </FooterSContent>
                                 <FooterSContent>
