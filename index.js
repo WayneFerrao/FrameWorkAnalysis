@@ -19,7 +19,7 @@ const CardData = [
         learnlink: "https://myanimelist.net/anime/20/Naruto",
     },
     {
-        image: "https://media.giphy.com/media/dLPhgJ9MhcdP2/giphy.gif",
+        image: "https://media.giphy.com/media/NPm37CzXc9NCM/giphy.gif",
         title: "Sakuraso no Pet na Kanojo",
         description: "Mashiro, a prodigal painter, has her whole world flipped upside down after transferring to the Sakurasou dormatory.",
         showlink: "https://www.crunchyroll.com/the-pet-girl-of-sakurasou",
