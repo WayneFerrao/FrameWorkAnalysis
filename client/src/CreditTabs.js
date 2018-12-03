@@ -28,7 +28,7 @@ const Header = styled.h2`
 `
 const MainHeader = styled.h1`
     padding-top: 5%;
-    margin-top: -10%;
+    margin-top: -8%;
     color: black;
     font-size: 3em;
     font-family: 'Roboto';
@@ -89,7 +89,7 @@ class CreditTabs extends React.Component {
                 </AppBar>
                 {value === 0 && <TabContainer>
                     <TabContent>
-                        <StyledImg src={Buowen}></StyledImg>
+                        <StyledImg src={Buowen}/>
                         <Content>
                             <Header>Student Number:</Header>500833495
                             <Header>Responsibilities:</Header>
@@ -108,7 +108,7 @@ class CreditTabs extends React.Component {
                 </TabContainer>}
                 {value === 1 && <TabContainer>
                     <TabContent>
-                        <StyledImg src={Wayne}></StyledImg>
+                        <StyledImg src={Wayne}/>
                         <Content>
                             <Header>Student Number:</Header>5008112288
                             <Header>Responsibilities:</Header>
@@ -132,7 +132,7 @@ class CreditTabs extends React.Component {
                 </TabContainer>}
                 {value === 2 && <TabContainer>
                     <TabContent>
-                        <StyledImg src={Brandon}></StyledImg>
+                        <StyledImg src={Brandon}/>
                         <Content>
                             <Header>Student Number:</Header>500834440
                             <Header>Responsibilities:</Header>
@@ -150,7 +150,7 @@ class CreditTabs extends React.Component {
                 </TabContainer>}
                 {value === 3 && <TabContainer>
                     <TabContent>
-                        <StyledImg src={Jason}></StyledImg>
+                        <StyledImg src={Jason}/>
                         <Content>
                             <Header>Student Number:</Header>500828987
                             <Header>Responsiblities:</Header> Demo page, tutorial, conclusion
