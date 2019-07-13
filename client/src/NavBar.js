@@ -1,6 +1,3 @@
-/*
-Changes made: I changed position of appbar to relative and changed the zindex
-*/
 import React, {Component} from "react";
 import {AppBar, Button, Drawer, ListItem, ListItemIcon, ListItemText, MenuList, Toolbar} from "@material-ui/core";
 import {Routes} from "./routes";
