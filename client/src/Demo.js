@@ -54,7 +54,7 @@ export default class Demo extends Component {
                 <br/>
                 <br/>
                 <Grid container justify="center" align Items="center">
-                    <Title>Demo Page</Title>
+                    <Title>Undisputed Top 6 Anime</Title>
                 </Grid>
                 <Grid container justify="center" alignItems="center">
 
@@ -76,15 +76,14 @@ export default class Demo extends Component {
                     />
                 </Grid>
                 <Grid container justify="center" align Items="center">
-                    <StyledH2>Top 6 Animes</StyledH2>
                 </Grid>
                 <Grid container justify="center" align Items="center">
                     <div style={{padding: '0% 12% 0%'}}>
                         <StyledP>
-                            These are the undisputed top  animes of all time. We have discussed for countless minutes
+                            These are the undisputed top anime of all time. We have discussed for countless minutes
                             over which anime belong on this prestigious list and have eliminated
-                            over 5000 other animes that were on our list. We have narrowed them down to the following
-                            animes with a perfect score of 5/7:
+                            over 5000 other anime that were on our list. We have narrowed them down to the following
+                            anime with a perfect score of 5/7.
                         </StyledP>
                     </div>
                 </Grid>

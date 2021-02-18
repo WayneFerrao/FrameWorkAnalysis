@@ -23,7 +23,7 @@ const MainHeader = styled.h1`
     padding-top: 10%;
     margin-top: -10%;
     color: black;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Roboto';
     font-weight: 700;
 `
@@ -178,8 +178,6 @@ export default class FWInstallation extends Component {
                 </div>
                 <Footer/>
             </div>
-
         )
     }
-
 }
